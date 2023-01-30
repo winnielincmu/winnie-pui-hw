@@ -1,4 +1,58 @@
-div {
-    background-color: red;
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
+h1 {
+    margin-bottom: 15px;
+    border-bottom: solid black 5px
+}
+
+#logo {
+    margin-left: 10px;
+}
+
+.selection-menu {
+    text-align: center;
+    font-size: 18px;
+}
+
+.product-select {
+    margin-bottom: 20px;
+}
+
+.cart-select {
+    margin-bottom: 80px;
+}
+
+.page-heading {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 50px;
+    font-weight: lighter;
+}
+
+.bun-images {
+    border: solid black 3px;
+    width: 280px;
+    height: 280px;
+    margin-bottom: 5px;
+}
+
+.bun-caption {
+   font-size: 22px;
+}
+
+.price {
+    margin-bottom: 50px;
+    font-size: 22px;
+}
+
+.bun-options {
+    overflow-wrap: break-word;
+    width: 286px;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 
