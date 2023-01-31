@@ -79,3 +79,26 @@ nav {
     margin-right: auto;
 }
 
+.bun-to-cart {
+    font-weight: bold;
+    display: flex;
+    text-align: center;
+    width: 335px;
+    height: 40px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.big-bun-price {
+    flex-grow: 1;
+    font-size: 16px;
+    align-self: center;
+}
+
+.add-to-cart {
+    flex-grow: 1;
+    background-color: yellow;
+    border: solid black 3px;
+    font-weight: bold;
+    font-size: 16px;
+}
