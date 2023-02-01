@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
   
+  <!-- set up html file -->
+
   <head>
 
     <meta charset="UTF-8">
@@ -11,28 +13,35 @@
 
   <body>
 
+    <!-- logo navigation and page selection menu -->
+
     <nav> 
-      <a href="./index.html"><img class="logo" src="./assets/logo/logo-01.svg" width="300px" height="200px"></a>
+      <a href="./index.html"><img class="logo" src="./assets/logo/logo-01.svg" alt="bun bun logo"></a>
     </nav>
 
     <p class="selection-menu">
-      <a href="./index.html" class="product-select"> PRODUCTS </a>
+      <a href="./index.html" class="product-select"> Products </a>
     </p>
 
     <p class="selection-menu">
-      <a href="./cart.html" class="cart-select"> CART </a>
+      <a href="./cart.html" class="cart-select"> Cart </a>
     </p>
 
     <br>
     <br>
+
+    <!-- title of page -->
 
     <p class="page-heading"> 
       Original cinnamon roll
     </p>
     
+    <!-- information on original cinnamon roll:
+    depicts an image, a caption/description, customization options, and a price  -->
+
     <div class="big-buns">
 
-      <img class="big-bun-image" src="./assets/products/original-cinnamon-roll.jpg" width="600px" height="600px">
+      <img class="big-bun-image" src="./assets/products/original-cinnamon-roll.jpg" alt="original cinnamon roll">
       
       <p class="big-bun-caption"> Customize our delicious, hand-made cinammon rolls to your liking! </p>
 
@@ -41,9 +50,11 @@
     <br>
     <br>
 
+    <!-- drop-down menu for glazing -->
+
     <p class="big-bun-caption"> Glazing: </p>
 
-    <div class="bun-customize" width="335px">
+    <div class="bun-customize">
       <select>
           <option value="0"> Keep original </option>
           <option value="1"> Sugar milk </option>
@@ -51,10 +62,12 @@
           <option value="3"> Double chocolate </option>
       </select>
     </div>
-      
+    
+    <!-- drop-down menu for pack size -->
+
     <p class="big-bun-caption"> Pack size: </p>
 
-    <div class="bun-customize" width="335px">
+    <div class="bun-customize">
       <select>
           <option value="0"> 1 </option>
           <option value="1"> 3 </option>
@@ -69,6 +82,8 @@
     <br>
     <br>
 
+    <!-- 'add to cart' feature next to price -->
+
     <div class="bun-to-cart">
       <div class="big-bun-price"> $ 2.49 </div>
       <button class="add-to-cart"> Add to Cart </button>
@@ -77,5 +92,5 @@
     <br>
     
   </body>
-  
+
 </html>

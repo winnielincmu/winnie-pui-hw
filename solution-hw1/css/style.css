@@ -1,3 +1,5 @@
+/* general settings */
+
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -6,7 +8,7 @@ a {
     color: black;
 }
 
-/* navigation and page selection */
+/* logo navigation and page selection menu */
 
 nav {
     margin-bottom: 15px;
@@ -16,6 +18,8 @@ nav {
 .logo {
     margin-left: 10px;
     margin-bottom: 5px;
+    width:300px;
+    height: 200px;
 }
 
 .selection-menu {
@@ -26,6 +30,7 @@ nav {
 .product-select {
     text-decoration: none;
     color: black;
+    text-transform: uppercase;
 }
 
 .product-select:hover {
@@ -36,6 +41,7 @@ nav {
 .cart-select {
     text-decoration: none;
     color: black;
+    text-transform: uppercase;
 }
 
 .cart-select:hover {
@@ -94,6 +100,8 @@ nav {
 
 .big-bun-image {
     border: solid black 3px;
+    width: 600px;
+    height: 600px;
 }
 
 .big-buns {
@@ -158,6 +166,8 @@ nav {
 
 .small-bun-image {
     border: solid black 3px;
+    width: 100px;
+    height: 100px;
 }
 
 .remove {
