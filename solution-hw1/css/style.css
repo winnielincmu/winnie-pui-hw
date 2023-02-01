@@ -9,6 +9,7 @@ nav {
 
 #logo {
     margin-left: 10px;
+    margin-bottom: 5px;
 }
 
 .selection-menu {
@@ -77,6 +78,14 @@ nav {
     text-align: left;
     margin-left: auto;
     margin-right: auto;
+}
+
+.bun-customize select {
+    width: 335px;
+    height: 40px;
+    border: solid black 3px;
+    font-size: 20px;
+    margin-top: 10px;
 }
 
 .bun-to-cart {
