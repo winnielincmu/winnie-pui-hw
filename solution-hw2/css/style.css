@@ -1,0 +1,196 @@
+/* general settings */
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+a {
+    color: black;
+}
+
+/* logo navigation and page selection menu */
+
+nav {
+    margin-bottom: 15px;
+    border-bottom: solid black 5px
+}
+
+.logo {
+    margin-left: 10px;
+    margin-bottom: 5px;
+    width:300px;
+    height: 200px;
+}
+
+.selection-menu {
+    text-align: center;
+    font-size: 18px;
+}
+
+.product-select {
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+}
+
+.product-select:hover {
+    background-color: yellow;
+    font-weight: bold;
+}
+
+.cart-select {
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+}
+
+.cart-select:hover {
+    background-color: yellow;
+    font-weight: bold;
+}
+
+.page-heading {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 50px;
+}
+
+/* index/gallery page */
+
+.bun-images {
+    border: solid black 3px;
+    width: 280px;
+    height: 280px;
+    margin-top: 3px;
+    margin-left: 3px;
+    margin-right: 3px;
+    margin-bottom: 8px;
+}
+
+.bun-caption {
+   font-size: 18.5px;
+}
+
+.price {
+    font-size: 18.5px;
+}
+
+.bun-options {
+    overflow-wrap: break-word;
+    width: 292px;
+    padding: 3px 3px 3px 3px;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.bun-options:hover {
+    background-color: yellow;
+}
+
+.bun-options p {
+    margin: 0px 0px 0px 0px;
+}
+
+.bun-options:hover p{
+    font-weight: bold;
+}
+
+/* details page */
+
+.big-bun-image {
+    border: solid black 3px;
+    width: 600px;
+    height: 600px;
+}
+
+.big-buns {
+    text-align: center;
+}
+
+.big-bun-caption {
+    font-size: 22px;
+    overflow-wrap: break-word;
+    width: 335px;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
+}
+
+.bun-customize {
+    width: 335px;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.bun-customize select {
+    width: 335px;
+    height: 40px;
+    border: solid black 3px;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.bun-to-cart {
+    font-weight: bold;
+    display: flex;
+    text-align: center;
+    width: 335px;
+    height: 40px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.big-bun-price {
+    flex-grow: 1;
+    font-size: 16px;
+    align-self: center;
+}
+
+.add-to-cart {
+    flex-grow: 1;
+    background-color: yellow;
+    border: solid black 3px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* cart page */
+
+.small-buns {
+    text-align: center;
+    font-size: 22px;
+}
+
+.small-bun-image {
+    border: solid black 3px;
+    width: 100px;
+    height: 100px;
+}
+
+.remove {
+    padding-top: 5px;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.cart-total {
+    padding-top: 22px;
+    border-top: solid black 3px;
+    margin-top: 35px;
+    margin-bottom: 22px;
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.checkout-button {
+    font-weight: bold;
+    font-size: 18px;
+    background-color: yellow;
+    border: solid black 3px;
+    width: 180px;
+    height: 45px;
+}
