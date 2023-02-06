@@ -11,20 +11,29 @@ a {
 /* logo navigation and page selection menu */
 
 nav {
-    margin-bottom: 15px;
-    border-bottom: solid black 5px
+    display: flex;
 }
 
 .logo {
-    margin-left: 10px;
-    margin-bottom: 5px;
+    margin-left: 20px;
+    margin-right: 20px;
     width:300px;
     height: 200px;
+    flex-shrink: 0;
 }
 
 .selection-menu {
-    text-align: center;
     font-size: 18px;
+    height: 20px;
+    margin-top: 25px;
+    flex-grow: 1;
+    justify-content: flex-end;
+}
+
+.product-cart-options {
+    display: flex;
+    justify-content: flex-end;
+    gap: 60px;
 }
 
 .product-select {
@@ -42,6 +51,7 @@ nav {
     text-decoration: none;
     color: black;
     text-transform: uppercase;
+    margin-right: 60px;
 }
 
 .cart-select:hover {
@@ -50,12 +60,25 @@ nav {
 }
 
 .page-heading {
-    text-align: center;
+    text-align: left;
     font-size: 30px;
-    margin-bottom: 50px;
+    margin-top: 25px;
+    border-top: solid black 5px;
+    padding-top: 60px;
+    justify-content: flex-start;
 }
 
 /* index/gallery page */
+
+.bun-gallery {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 40px;
+    margin-right: 40px;
+    column-gap: 30px;
+}
+
+/* each individual bun listing */
 
 .bun-images {
     border: solid black 3px;
@@ -98,20 +121,30 @@ nav {
 
 /* details page */
 
+.big-buns {
+    display: flex;
+    justify-content: flex-start;
+}
+
 .big-bun-image {
     border: solid black 3px;
     width: 600px;
     height: 600px;
+    flex-shrink: 0;
+    margin-left: 80px;
+    margin-right: 60px;
 }
 
-.big-buns {
-    text-align: center;
+/* information panel for original cinnamon roll */
+
+.big-bun-info {
+    justify-content: flex-start;
 }
 
 .big-bun-caption {
-    font-size: 22px;
+    font-size: 23px;
     overflow-wrap: break-word;
-    width: 335px;
+    width: 350px;
     text-align: left;
     margin-left: auto;
     margin-right: auto;
@@ -119,42 +152,51 @@ nav {
 }
 
 .bun-customize {
-    width: 335px;
+    width: 350px;
     text-align: left;
     margin-left: auto;
     margin-right: auto;
 }
 
 .bun-customize select {
-    width: 335px;
-    height: 40px;
+    width: 350px;
+    height: 50px;
     border: solid black 3px;
     font-size: 20px;
     margin-top: 10px;
+}
+
+/* designated whitespace between customization and price details */
+
+#whitespace {
+    height: 150px;
 }
 
 .bun-to-cart {
     font-weight: bold;
     display: flex;
     text-align: center;
-    width: 335px;
-    height: 40px;
+    width: 350px;
+    height: 50px;
     margin-left: auto;
     margin-right: auto;
 }
 
 .big-bun-price {
     flex-grow: 1;
-    font-size: 16px;
+    font-size: 18px;
     align-self: center;
 }
 
 .add-to-cart {
     flex-grow: 1;
-    background-color: yellow;
     border: solid black 3px;
     font-weight: bold;
-    font-size: 16px;
+    font-size: 18px;
+}
+
+.add-to-cart:hover {
+    background-color: yellow;
 }
 
 /* cart page */
@@ -189,8 +231,11 @@ nav {
 .checkout-button {
     font-weight: bold;
     font-size: 18px;
-    background-color: yellow;
     border: solid black 3px;
     width: 180px;
     height: 45px;
+}
+
+.checkout-button:hover {
+    background-color: yellow;
 }
