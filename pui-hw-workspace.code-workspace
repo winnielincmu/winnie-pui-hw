@@ -2,9 +2,6 @@
 	"folders": [
 		{
 			"path": "."
-		},
-		{
-			"path": "../pui-class-resources/in-lab-examples/puinote-lab02"
 		}
 	],
 	"settings": {
