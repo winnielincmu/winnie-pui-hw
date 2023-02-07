@@ -2,6 +2,7 @@
 
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: solid black 1px;
 }
 
 a {
@@ -17,15 +18,15 @@ nav {
 .logo {
     margin-left: 20px;
     margin-right: 20px;
-    width:300px;
-    height: 200px;
+    width: 400px;
+    height: 300px;
     flex-shrink: 0;
 }
 
 .selection-menu {
-    font-size: 18px;
-    height: 20px;
-    margin-top: 25px;
+    font-size: 22px;
+    height: 22px;
+    margin-top: 40px;
     flex-grow: 1;
     justify-content: flex-end;
 }
@@ -61,10 +62,10 @@ nav {
 
 .page-heading {
     text-align: left;
-    font-size: 30px;
-    margin-top: 25px;
+    font-size: 35px;
+    margin-top: 40px;
     border-top: solid black 5px;
-    padding-top: 60px;
+    padding-top: 100px;
     justify-content: flex-start;
 }
 
@@ -73,9 +74,9 @@ nav {
 .bun-gallery {
     display: flex;
     justify-content: flex-start;
-    margin-left: 40px;
-    margin-right: 40px;
-    column-gap: 30px;
+    margin-left: 80px;
+    margin-right: 80px;
+    column-gap: 25px;
 }
 
 /* each individual bun listing */
@@ -124,14 +125,14 @@ nav {
 .big-buns {
     display: flex;
     justify-content: flex-start;
+    margin-left: 70px;
 }
 
 .big-bun-image {
     border: solid black 3px;
-    width: 600px;
-    height: 600px;
+    width: 680px;
+    height: 680px;
     flex-shrink: 0;
-    margin-left: 80px;
     margin-right: 60px;
 }
 
@@ -201,15 +202,33 @@ nav {
 
 /* cart page */
 
+.cart-layout {
+    display: flex;
+}
+
+#cart-whitespace {
+    width: 440px;
+    flex-shrink: 0;
+}
+
+/* list of cart items */
+
 .small-buns {
-    text-align: center;
-    font-size: 22px;
+    font-size: 24px;
+    flex-grow: 1;
+    justify-content: flex-start;
+}
+
+.cart-item {
+    display: flex;
 }
 
 .small-bun-image {
     border: solid black 3px;
     width: 100px;
     height: 100px;
+    margin-right: 30px;
+    flex-shrink: 0;
 }
 
 .remove {
@@ -218,14 +237,38 @@ nav {
     font-size: 12px;
 }
 
+.item-details {
+    flex-grow: 1;
+    margin-top: 15px;
+}
+
+span {
+    flex-grow: 1;
+}
+
+.glazing-price-line {
+    display: flex;
+}
+
+.item-price {
+    margin-right: 60px;
+    text-align: right;
+}
+
+/* layout for cart summary */
+
+#offset-total {
+    width: 136px;
+}
+
 .cart-total {
-    padding-top: 22px;
-    border-top: solid black 3px;
-    margin-top: 35px;
-    margin-bottom: 22px;
-    width: 600px;
-    margin-left: auto;
-    margin-right: auto;
+    display: flex;
+    padding-top: 10px;
+    border-top: solid black 5px;
+}
+
+.checkout-line {
+    text-align: right;
 }
 
 .checkout-button {
@@ -233,7 +276,8 @@ nav {
     font-size: 18px;
     border: solid black 3px;
     width: 180px;
-    height: 45px;
+    height: 50px;
+    margin-right: 60px;
 }
 
 .checkout-button:hover {

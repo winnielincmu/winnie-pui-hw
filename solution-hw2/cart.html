@@ -45,40 +45,103 @@
     each would include an image, a 'remove' option, a
     caption/description, any customization details, and a price -->
 
-    <!-- original cinnamon roll -->
+    <div class="cart-layout">
 
-    <div class="small-buns">
-        <img class="small-bun-image" src="./assets/products/original-cinnamon-roll.jpg" alt="original cinnamon roll">
-        <div class="remove"> Remove </div>
+      <!-- divide space into two sections, one with content and one without -->
 
+      <div id="cart-whitespace"></div>
+
+      <div class="small-buns">
+        
+        <!-- original cinnamon roll -->
+  
+        <div class="cart-item">
+
+          <!-- image and remove -->
+
+          <div>
+            <img class="small-bun-image" src="./assets/products/original-cinnamon-roll.jpg" alt="original cinnamon roll">
+            <div class="remove"> Remove </div>
+          </div>
+
+          <!-- description, price, and size -->
+
+          <div class="item-details">
+
+            <div> Original Cinnamon Roll </div>
+
+            <div class="glazing-price-line"> 
+              <span> Glazing: Keep original </span>
+              <span class="item-price"> $ 2.49 </span>
+            </div>
+
+            <div> Pack Size: 1 </div>
+
+          </div>
+
+        </div>
+        
         <br>
-
-        <div> Original Cinnamon Roll </div>
-        <div> Glazing: Keep original </div>
-        <div> Pack Size: 1 </div>
-        <p> $ 2.49 </p>
-
-        <br>
-        <br>
-
+  
         <!-- double chocolate cinnamon roll -->
+        
+        <div class="cart-item">
 
-        <img class="small-bun-image" src="./assets/products/double-chocolate-cinnamon-roll.jpg" alt="double cinnamon roll">
-        <div class="remove"> Remove </div>
+          <!-- image and remove -->
 
+          <div>
+            <img class="small-bun-image" src="./assets/products/double-chocolate-cinnamon-roll.jpg" alt="double cinnamon roll">
+            <div class="remove"> Remove </div>
+          </div>
+
+          <!-- description, price, and size -->
+
+          <div class="item-details">
+
+            <div> Double Chocolate Cinnamon Roll </div>
+
+            <div class="glazing-price-line"> 
+              <span> Glazing: Sugar milk </span>
+              <span class="item-price"> $ 27.45 </span>
+            </div>
+
+            <div> Pack Size: 6 </div>
+
+          </div>
+
+        </div>
+        
         <br>
 
-        <div> Double Chocolate Cinnamon Roll </div>
-        <div> Glazing: Sugar milk </div>
-        <div> Pack Size: 6 </div>
-        <p> $ 27.45 </p>
-        
         <!-- checkout with total price of goods -->
+  
+        <div class="cart-total"> 
 
-        <div class="cart-total"> Total: $ 29.94 </div>
+          <div class="item-details">
 
-        <button class="checkout-button"> Checkout </button>
-        
+            <div class="glazing-price-line">
+
+              <div id="offset-total"></div>
+              <span> Total </span>
+              <span class="item-price"> $ 29.94 </span>
+
+            </div>
+
+          </div>
+
+        </div>
+          
+      </div>
+
+    </div>
+
+    <br>
+    <br>
+
+    <!-- checkout button on separate line -->
+
+    <div class="checkout-line">
+      <button class="checkout-button"> Checkout </button>
     </div>
 
     <br>
