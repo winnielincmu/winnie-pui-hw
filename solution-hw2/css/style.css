@@ -239,31 +239,31 @@ nav {
 
 .item-details {
     flex-grow: 1;
-    margin-top: 15px;
-}
-
-span {
-    flex-grow: 1;
-}
-
-.glazing-price-line {
+    flex-shrink: 0;
+    height: 106px;
     display: flex;
+    align-items: center;
+}
+
+.item-description {
+    width: 450px;
 }
 
 .item-price {
     margin-right: 60px;
     text-align: right;
+    flex-grow: 1;
 }
 
 /* layout for cart summary */
 
 #offset-total {
     width: 136px;
+    flex-shrink: 0;
 }
 
 .cart-total {
     display: flex;
-    padding-top: 10px;
     border-top: solid black 5px;
 }
 
