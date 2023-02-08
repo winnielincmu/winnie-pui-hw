@@ -2,7 +2,6 @@
 
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    border: solid black 1px;
 }
 
 a {
@@ -26,7 +25,7 @@ nav {
 .selection-menu {
     font-size: 22px;
     height: 22px;
-    margin-top: 40px;
+    margin-top: 30px;
     flex-grow: 1;
     justify-content: flex-end;
 }
@@ -62,10 +61,10 @@ nav {
 
 .page-heading {
     text-align: left;
-    font-size: 35px;
-    margin-top: 40px;
+    font-size: 30px;
+    margin-top: 30px;
     border-top: solid black 5px;
-    padding-top: 100px;
+    padding-top: 90px;
     justify-content: flex-start;
 }
 
@@ -73,10 +72,8 @@ nav {
 
 .bun-gallery {
     display: flex;
-    justify-content: flex-start;
-    margin-left: 80px;
-    margin-right: 80px;
-    column-gap: 25px;
+    justify-content: center;
+    column-gap: 5px;
 }
 
 /* each individual bun listing */
@@ -124,16 +121,15 @@ nav {
 
 .big-buns {
     display: flex;
-    justify-content: flex-start;
-    margin-left: 70px;
+    justify-content: center;
 }
 
 .big-bun-image {
     border: solid black 3px;
-    width: 680px;
-    height: 680px;
+    width: 600px;
+    height: 600px;
     flex-shrink: 0;
-    margin-right: 60px;
+    margin-right: 30px;
 }
 
 /* information panel for original cinnamon roll */
@@ -278,6 +274,7 @@ nav {
     width: 180px;
     height: 50px;
     margin-right: 60px;
+    flex-shrink: 0;
 }
 
 .checkout-button:hover {
