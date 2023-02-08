@@ -17,8 +17,8 @@ nav {
 .logo {
     margin-left: 20px;
     margin-right: 20px;
-    width: 400px;
-    height: 300px;
+    width: 350px;
+    height: 250px;
     flex-shrink: 0;
 }
 
@@ -203,14 +203,13 @@ nav {
 }
 
 #cart-whitespace {
-    width: 440px;
-    flex-shrink: 0;
+    width: 390px;
 }
 
 /* list of cart items */
 
 .small-buns {
-    font-size: 24px;
+    font-size: 20px;
     flex-grow: 1;
     justify-content: flex-start;
 }
@@ -242,7 +241,7 @@ nav {
 }
 
 .item-description {
-    width: 450px;
+    width: 350px;
 }
 
 .item-price {
