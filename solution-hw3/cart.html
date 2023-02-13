@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+   <!-- set up html file -->
+
+  <head>
+
+    <meta charset="UTF-8">
+    <title>Shopping Cart</title> 
+    <link href="./css/style.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <!-- logo navigation and page selection menu -->
+
+    <nav> 
+      <a href="./index.html"><img class="logo" src="./assets/logo/logo-01.svg" alt="bun bun logo"></a>
+    
+      <div class="selection-menu">
+
+        <!-- product and cart links  -->
+        
+        <div class="product-cart-options">
+          <a href="./index.html" class="product-select"> Products </a>
+
+          <a href="./cart.html" class="cart-select"> Cart </a>
+        </div>
+
+        <!-- title of page -->
+
+        <div class="page-heading"> 
+          Shopping cart
+        </div>
+
+      </div>
+
+    </nav>
+
+    <br>
+    <br>
+
+    <!-- two items shown in shopping cart:
+    each would include an image, a 'remove' option, a
+    caption/description, any customization details, and a price -->
+
+    <div class="cart-layout">
+
+      <!-- divide space into two sections, one with content and one without -->
+
+      <div id="cart-whitespace"></div>
+
+      <div class="small-buns">
+        
+        <!-- original cinnamon roll -->
+  
+        <div class="cart-item">
+
+          <!-- image and remove -->
+
+          <div>
+            <img class="small-bun-image" src="./assets/products/original-cinnamon-roll.jpg" alt="original cinnamon roll">
+            <div class="remove"> Remove </div>
+          </div>
+
+          <!-- description, price, and size -->
+
+          <div class="item-details">
+
+            <div class="item-description">
+              <div> Original Cinnamon Roll </div>
+              <div> Glazing: Keep original </div>
+              <div> Pack Size: 1 </div>
+            </div>
+
+            <div class="item-price"> $ 2.49 </div>
+
+          </div>
+
+        </div>
+        
+        <br>
+  
+        <!-- double chocolate cinnamon roll -->
+        
+        <div class="cart-item">
+
+          <!-- image and remove -->
+
+          <div>
+            <img class="small-bun-image" src="./assets/products/double-chocolate-cinnamon-roll.jpg" alt="double cinnamon roll">
+            <div class="remove"> Remove </div>
+          </div>
+
+          <!-- description, price, and size -->
+
+          <div class="item-details">
+
+            <div class="item-description">
+              <div> Double Chocolate Cinnamon Roll </div>
+              <div> Glazing: Sugar milk </div>
+              <div> Pack Size: 6 </div>
+            </div>
+
+            <div class="item-price"> $ 27.45 </div>
+
+          </div>
+
+        </div>
+        
+        <br>
+
+        <!-- checkout with total price of goods -->
+  
+        <div class="cart-total"> 
+
+          <div id="offset-total"></div>
+
+          <div class="item-details">
+
+            <div class="item-description"> Total </div>
+            <div class="item-price"> $ 29.94 </div>
+
+          </div>
+
+        </div>
+          
+      </div>
+
+    </div>
+
+    <br>
+    <br>
+
+    <!-- checkout button on separate line -->
+
+    <div class="checkout-line">
+      <button class="checkout-button"> Checkout </button>
+    </div>
+
+    <br>
+    
+  </body>
+
+</html>

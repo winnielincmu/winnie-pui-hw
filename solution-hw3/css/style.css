@@ -1,0 +1,281 @@
+/* general settings */
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+a {
+    color: black;
+}
+
+/* logo navigation and page selection menu */
+
+nav {
+    display: flex;
+}
+
+.logo {
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 350px;
+    height: 250px;
+    flex-shrink: 0;
+}
+
+.selection-menu {
+    font-size: 22px;
+    height: 22px;
+    margin-top: 30px;
+    flex-grow: 1;
+    justify-content: flex-end;
+}
+
+.product-cart-options {
+    display: flex;
+    justify-content: flex-end;
+    gap: 60px;
+}
+
+.product-select {
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+}
+
+.product-select:hover {
+    background-color: yellow;
+    font-weight: bold;
+}
+
+.cart-select {
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    margin-right: 60px;
+}
+
+.cart-select:hover {
+    background-color: yellow;
+    font-weight: bold;
+}
+
+.page-heading {
+    text-align: left;
+    font-size: 30px;
+    margin-top: 30px;
+    border-top: solid black 5px;
+    padding-top: 90px;
+    justify-content: flex-start;
+}
+
+/* index/gallery page */
+
+.bun-gallery {
+    display: flex;
+    justify-content: center;
+    column-gap: 5px;
+}
+
+/* each individual bun listing */
+
+.bun-images {
+    border: solid black 3px;
+    width: 280px;
+    height: 280px;
+    margin-top: 3px;
+    margin-left: 3px;
+    margin-right: 3px;
+    margin-bottom: 8px;
+}
+
+.bun-caption {
+   font-size: 18.5px;
+}
+
+.price {
+    font-size: 18.5px;
+}
+
+.bun-options {
+    overflow-wrap: break-word;
+    width: 292px;
+    padding: 3px 3px 3px 3px;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.bun-options:hover {
+    background-color: yellow;
+}
+
+.bun-options p {
+    margin: 0px 0px 0px 0px;
+}
+
+.bun-options:hover p{
+    font-weight: bold;
+}
+
+/* details page */
+
+.big-buns {
+    display: flex;
+    justify-content: center;
+}
+
+.big-bun-image {
+    border: solid black 3px;
+    width: 600px;
+    height: 600px;
+    flex-shrink: 0;
+    margin-right: 30px;
+}
+
+/* information panel for original cinnamon roll */
+
+.big-bun-info {
+    justify-content: flex-start;
+}
+
+.big-bun-caption {
+    font-size: 23px;
+    overflow-wrap: break-word;
+    width: 350px;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
+}
+
+.bun-customize {
+    width: 350px;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.bun-customize select {
+    width: 350px;
+    height: 50px;
+    border: solid black 3px;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+/* designated whitespace between customization and price details */
+
+#whitespace {
+    height: 150px;
+}
+
+.bun-to-cart {
+    font-weight: bold;
+    display: flex;
+    text-align: center;
+    width: 350px;
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.big-bun-price {
+    flex-grow: 1;
+    font-size: 18px;
+    align-self: center;
+}
+
+.add-to-cart {
+    flex-grow: 1;
+    border: solid black 3px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.add-to-cart:hover {
+    background-color: yellow;
+}
+
+/* cart page */
+
+.cart-layout {
+    display: flex;
+}
+
+#cart-whitespace {
+    width: 390px;
+}
+
+/* list of cart items */
+
+.small-buns {
+    font-size: 20px;
+    flex-grow: 1;
+    justify-content: flex-start;
+}
+
+.cart-item {
+    display: flex;
+}
+
+.small-bun-image {
+    border: solid black 3px;
+    width: 100px;
+    height: 100px;
+    margin-right: 30px;
+    flex-shrink: 0;
+}
+
+.remove {
+    padding-top: 5px;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.item-details {
+    flex-grow: 1;
+    flex-shrink: 0;
+    height: 106px;
+    display: flex;
+    align-items: center;
+}
+
+.item-description {
+    width: 350px;
+}
+
+.item-price {
+    margin-right: 60px;
+    text-align: right;
+    flex-grow: 1;
+}
+
+/* layout for cart summary */
+
+#offset-total {
+    width: 136px;
+    flex-shrink: 0;
+}
+
+.cart-total {
+    display: flex;
+    border-top: solid black 5px;
+}
+
+.checkout-line {
+    text-align: right;
+}
+
+.checkout-button {
+    font-weight: bold;
+    font-size: 18px;
+    border: solid black 3px;
+    width: 180px;
+    height: 50px;
+    margin-right: 60px;
+    flex-shrink: 0;
+}
+
+.checkout-button:hover {
+    background-color: yellow;
+}
