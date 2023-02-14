@@ -150,7 +150,18 @@ nav {
 
 /* glazing and pack size dropdown menus */
 
-#glazing-customize, #pack-customize {
+#glazing-customize {
+    width: 350px;
+    height: 50px;
+    border: solid black 3px;
+    font-size: 20px;
+    margin-top: 10px;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#pack-customize {
     width: 350px;
     height: 50px;
     border: solid black 3px;
