@@ -148,19 +148,17 @@ nav {
     margin-bottom: 0;
 }
 
-.bun-customize {
-    width: 350px;
-    text-align: left;
-    margin-left: auto;
-    margin-right: auto;
-}
+/* glazing and pack size dropdown menus */
 
-.bun-customize select {
+#glazing-customize, #pack-customize {
     width: 350px;
     height: 50px;
     border: solid black 3px;
     font-size: 20px;
     margin-top: 10px;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* designated whitespace between customization and price details */
@@ -175,12 +173,11 @@ nav {
     text-align: center;
     width: 350px;
     height: 50px;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .big-bun-price {
-    flex-grow: 1;
+    width: 175px;
+    flex-shrink: 0;
     font-size: 18px;
     align-self: center;
 }
