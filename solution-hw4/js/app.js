@@ -94,7 +94,7 @@ var displayPrice = document.querySelector('.big-bun-price');
 
 // set base price as database specified according to roll type
 
-var basePrice = rolls[rollType]["basePrice"]
+var basePrice = rolls[rollType]["basePrice"];
 
 // assign respective images, names, and base prices to the rolls we have
 
@@ -102,10 +102,12 @@ rollImage.src = './assets/products/' + rolls[rollType]["imageFile"];
 rollName.innerText = rollType + ' Cinnamon Roll';
 displayPrice.innerText = '$ ' + basePrice;
 
-// price react to different customer selections
+// add event listeners to glazing and pack size dropdowns, reacting on change
 
 glazingOptions.addEventListener('change', onSelectValueChange);
 packOptions.addEventListener('change', onSelectValueChange);
+
+// function to update the price displayed based on the glazing and pack options
 
 function onSelectValueChange() 
 {
@@ -134,14 +136,46 @@ function onSelectValueChange()
 class Roll {
 
     constructor(rollType, rollGlazing, packSize, basePrice) {
+
         this.type = rollType;
         this.glazing =  rollGlazing;
         this.size = packSize;
         this.basePrice = basePrice;
+
     }
+
 }
 
 // create empty array for cart, will be filled with roll class instances
 
 let cart = new Array();
 
+// retrieve cart button from DOM and add an event listener for clicks
+
+let cartButton = document.querySelector('.add-to-cart');
+cartButton.addEventListener('click', addRollToCart);
+
+// function to add selected roll to the cart
+
+function addRollToCart () {
+
+    // locate index to find type of glazing
+
+    let glazingIndex = glazingOptions.selectedIndex;
+    let rollGlazing = allGlazing[glazingIndex]['type'];
+
+    // locate index to find pack size
+
+    let packIndex = packOptions.selectedIndex;
+    let packSize = allPacks[packIndex]['size'];
+
+    // create new instance of the roll class with the given parameters
+
+    const roll = new Roll(rollType, rollGlazing, packSize, basePrice);
+
+    // add selected roll to the cart and print entire cart array
+
+    cart.push(roll);
+    console.log(cart);
+
+}
