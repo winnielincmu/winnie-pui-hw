@@ -80,6 +80,28 @@ for (let i = 0; i < allPacks.length; i++)
 
 }
 
+// code provided by hw4 instructions, acquire roll type from URL
+
+const queryString = window.location.search;
+const params = new URLSearchParams(queryString);
+const rollType = params.get('roll');
+
+// retrieve roll image, name, and price displayed from DOM
+
+var rollImage = document.querySelector('.big-bun-image');
+var rollName = document.querySelector('.page-heading');
+var displayPrice = document.querySelector('.big-bun-price');
+
+// set base price as database specified according to roll type
+
+var basePrice = rolls[rollType]["basePrice"]
+
+// assign respective images, names, and base prices to the rolls we have
+
+rollImage.src = './assets/products/' + rolls[rollType]["imageFile"];
+rollName.innerText = rollType + ' Cinnamon Roll';
+displayPrice.innerText = '$ ' + basePrice;
+
 // price react to different customer selections
 
 glazingOptions.addEventListener('change', onSelectValueChange);
@@ -92,14 +114,6 @@ function onSelectValueChange()
 
     let glazingPrice = parseFloat(glazingOptions.value);
     let packPrice = parseFloat(packOptions.value);
-
-    // set the value of the base price as provided by the instructions
-
-    const basePrice = 2.49;
-
-    // retrieve price element from HTML to modify
-
-    let displayPrice = document.querySelector('.big-bun-price');
 
     // calculate item price based on base price, glazing price, and pack price
 
@@ -115,27 +129,19 @@ function onSelectValueChange()
 
 }
 
+// code provided by hw4 instructions, standardizing properties of roll class
 
-// class Roll {
-//     constructor(rollType, basePrice, allGlazing, allPacks) {
-//         this.type = rollType;
-//         this.basePrice = basePrice;
-//         this.glazing = allGlazing;
-//         this.packSize = allPacks;
-//     }
-// }
+class Roll {
+
+    constructor(rollType, rollGlazing, packSize, basePrice) {
+        this.type = rollType;
+        this.glazing =  rollGlazing;
+        this.size = packSize;
+        this.basePrice = basePrice;
+    }
+}
+
+// create empty array for cart, will be filled with roll class instances
 
 let cart = new Array();
 
-const queryString = window.location.search;
-const params = new URLSearchParams(queryString);
-const rollType = params.get('roll');
-
-
-let rollImage = document.querySelector('.bun-images');
-let rollName = document.querySelector('.page-heading');
-let basePrice = document.querySelector('.big-bun-price');
-
-
-rollName.innerText = rollType + ' Cinnamon Roll';
-basePrice.innerText = rolls[rollType]["basePrice"];
