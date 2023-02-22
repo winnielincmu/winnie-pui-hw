@@ -25,4 +25,4 @@ const rolls = {
         "basePrice": 3.99,
         "imageFile": "strawberry-cinnamon-roll.jpg"
     }    
-};
+}
