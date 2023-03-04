@@ -238,6 +238,7 @@ nav {
     padding-top: 5px;
     font-weight: bold;
     font-size: 12px;
+    text-decoration: underline;
 }
 
 .item-details {
@@ -252,7 +253,7 @@ nav {
     width: 350px;
 }
 
-.item-price {
+.item-price, #total-price {
     margin-right: 60px;
     text-align: right;
     flex-grow: 1;

@@ -8,6 +8,8 @@
     <meta charset="UTF-8">
     <title>Shopping Cart</title> 
     <link href="./css/style.css" rel="stylesheet">
+    <script defer src="./js/rollsData.js"></script>
+    <script defer src="./js/cart.js"></script>
 
   </head>
 
@@ -41,7 +43,7 @@
     <br>
     <br>
 
-    <!-- two items shown in shopping cart:
+    <!-- items shown in shopping cart:
     each would include an image, a 'remove' option, a
     caption/description, any customization details, and a price -->
 
@@ -53,63 +55,42 @@
 
       <div class="small-buns">
         
-        <!-- original cinnamon roll -->
+        <div class="cart-list">
+
+          <!-- original cinnamon roll, acts as template for other cart items -->
   
-        <div class="cart-item">
+          <template id="roll-template">
 
-          <!-- image and remove -->
+            <div class="cart-item">
 
-          <div>
-            <img class="small-bun-image" src="./assets/products/original-cinnamon-roll.jpg" alt="original cinnamon roll">
-            <div class="remove"> Remove </div>
-          </div>
+              <!-- image and remove -->
 
-          <!-- description, price, and size -->
+              <div>
+                <img class="small-bun-image" src="./assets/products/original-cinnamon-roll.jpg" alt="original cinnamon roll">
+                <div class="remove"> Remove </div>
 
-          <div class="item-details">
+                <br>
 
-            <div class="item-description">
-              <div> Original Cinnamon Roll </div>
-              <div> Glazing: Keep original </div>
-              <div> Pack Size: 1 </div>
+              </div>
+
+              <!-- description, price, and size -->
+
+              <div class="item-details">
+
+                <div class="item-description">
+                  <div class="roll-name"> Original Cinnamon Roll </div>
+                  <div class="roll-glaze"> Glazing: Keep original </div>
+                  <div class="roll-pack"> Pack Size: 1 </div>
+                </div>
+
+                <div class="item-price"> $ 2.49 </div>
+
+              </div>
+
             </div>
-
-            <div class="item-price"> $ 2.49 </div>
-
-          </div>
-
-        </div>
-        
-        <br>
   
-        <!-- double chocolate cinnamon roll -->
-        
-        <div class="cart-item">
-
-          <!-- image and remove -->
-
-          <div>
-            <img class="small-bun-image" src="./assets/products/double-chocolate-cinnamon-roll.jpg" alt="double cinnamon roll">
-            <div class="remove"> Remove </div>
-          </div>
-
-          <!-- description, price, and size -->
-
-          <div class="item-details">
-
-            <div class="item-description">
-              <div> Double Chocolate Cinnamon Roll </div>
-              <div> Glazing: Sugar milk </div>
-              <div> Pack Size: 6 </div>
-            </div>
-
-            <div class="item-price"> $ 27.45 </div>
-
-          </div>
-
+          </template>
         </div>
-        
-        <br>
 
         <!-- checkout with total price of goods -->
   
@@ -120,7 +101,7 @@
           <div class="item-details">
 
             <div class="item-description"> Total </div>
-            <div class="item-price"> $ 29.94 </div>
+            <div id="total-price"> $ 29.94 </div>
 
           </div>
 
@@ -128,6 +109,7 @@
           
       </div>
 
+      
     </div>
 
     <br>

@@ -1,51 +1,3 @@
-// create object for all glazing options
-
-let allGlazing = [
-    {
-        type: 'Keep original', 
-        priceAdd: 0.00
-    },
-
-    {
-        type: 'Sugar milk',
-        priceAdd: 0.00
-    },
-
-    {
-        type: 'Vanilla milk', 
-        priceAdd: 0.50
-    },
-
-    {
-        type: 'Double chocolate', 
-        priceAdd: 1.50
-    }
-]
-
-// create object for all pack size options
-
-let allPacks = [
-    {
-        size: 1, 
-        priceMultiply: 1
-    },
-
-    {
-        size: 3, 
-        priceMultiply: 3
-    },
-
-    {
-        size: 6, 
-        priceMultiply: 5
-    },
-
-    {
-        size: 12, 
-        priceMultiply: 10
-    }
-]
-
 // retrieve glazing select element from HTML to modify
 
 let glazingOptions = document.querySelector('#glazing-customize');
@@ -88,13 +40,13 @@ const rollType = params.get('roll');
 
 // retrieve roll image, name, and price displayed from DOM
 
-var rollImage = document.querySelector('.big-bun-image');
-var rollName = document.querySelector('.page-heading');
-var displayPrice = document.querySelector('.big-bun-price');
+let rollImage = document.querySelector('.big-bun-image');
+let rollName = document.querySelector('.page-heading');
+let displayPrice = document.querySelector('.big-bun-price');
 
 // set base price as database specified according to roll type
 
-var basePrice = rolls[rollType]["basePrice"];
+let basePrice = rolls[rollType]["basePrice"];
 
 // assign respective images, names, and base prices to the rolls we have
 
@@ -179,3 +131,4 @@ function addRollToCart () {
     console.log(cart);
 
 }
+
