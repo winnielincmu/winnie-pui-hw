@@ -132,3 +132,34 @@ function addRollToCart () {
 
 }
 
+// function submitRoll() {
+
+//     const rollName = document.querySelector('.page-heading');
+//     const rollNameText = rollName.value;
+
+//     // const rollImage = document.querySelector('.big-bun-image');
+//     // const rollImageURL = rollImage.src;
+
+//     // const rollPrice = document.querySelector('.big-bun-price');
+//     // const rollPriceText = rollPrice.value;
+
+//     const rollGlazing = document.querySelector('#glazing-customize');
+//     const rollGlazingText = rollGlazing.value;
+
+//     const rollPackSize = document.querySelector('#pack-customize');
+//     const rollPackSizeText = rollPackSize.value;
+
+//     const basePrice = rolls[rollType]["basePrice"];
+//     const basePriceText = basePrice.value;
+
+//     const roll = addNewRoll(rollNameText, rollGlazingText, rollPackSizeText, basePriceText);
+//     createCartElement(roll);
+// }
+
+// // make new roll and add it to the cart array, returns the roll to be used by other functions
+
+// function addNewRoll(rollType, rollGlazing, packSize, basePrice) {
+//     const roll = new Roll(rollType, rollGlazing, packSize, basePrice);
+//     cart.push(roll);
+//     return roll;
+// }
