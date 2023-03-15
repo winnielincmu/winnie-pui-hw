@@ -12,7 +12,6 @@ for (let i = 0; i < allGlazing.length; i++)
     option.value = current.priceAdd;
 
     glazingOptions.add(option);
-
 }
 
 // retrieve pack size select element from HTML to modify
@@ -29,7 +28,6 @@ for (let i = 0; i < allPacks.length; i++)
     option.value = current.priceMultiply;
 
     packOptions.add(option);
-
 }
 
 // code provided by hw4 instructions, acquire roll type from URL
@@ -56,7 +54,7 @@ displayPrice.innerText = '$ ' + basePrice;
 
 // retrieve cart from local storage upon loading
 
-let cart = retrieveFromLocalStorage();
+retrieveFromLocalStorage();
 
 // add event listeners to glazing and pack size dropdowns, reacting on change
 
@@ -67,7 +65,6 @@ packOptions.addEventListener('change', onSelectValueChange);
 
 function onSelectValueChange() 
 {
-
     // get price additions and factors for glazing and pack size modifications respectively
 
     let glazingPrice = parseFloat(glazingOptions.value);
@@ -84,22 +81,6 @@ function onSelectValueChange()
     // update webpage HTML with accurate price
 
     displayPrice.innerText = roundedPrice;
-
-}
-
-// code provided by hw4 instructions, standardizing properties of roll class
-
-class Roll {
-
-    constructor(rollType, rollGlazing, packSize, basePrice) {
-
-        this.type = rollType;
-        this.glazing =  rollGlazing;
-        this.size = packSize;
-        this.basePrice = basePrice;
-
-    }
-
 }
 
 // retrieve cart button from DOM and add an event listener for clicks
@@ -110,7 +91,7 @@ cartButton.addEventListener('click', addRollToCart);
 // function to add selected roll to the cart
 
 function addRollToCart() {
-
+    
     // locate index to find type of glazing
 
     let glazingIndex = glazingOptions.selectedIndex;
@@ -138,5 +119,3 @@ function addRollToCart() {
     console.log(cart);
 
 }
-
-// localStorage.clear()

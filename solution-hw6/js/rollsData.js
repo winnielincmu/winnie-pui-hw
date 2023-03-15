@@ -75,25 +75,18 @@ let allPacks = [
     }
 ]
 
-// function to parse cart array from local storage, otherwise create a new cart array
+// code provided by hw4 instructions, standardizing properties of roll class
 
-function retrieveFromLocalStorage() {
+class Roll {
 
-    if (localStorage.getItem('storedCart') != null) {
+    constructor(rollType, rollGlazing, packSize, basePrice) {
 
-        // get cart string from local storage
+        this.type = rollType;
+        this.glazing =  rollGlazing;
+        this.size = packSize;
+        this.basePrice = basePrice;
 
-         const cartString = localStorage.getItem('storedCart');
-   
-        // turn cart string back into Javascript cart array
-
-        const cart = JSON.parse(cartString);
-        return cart;
-
-    } else {
-
-        const cart = new Array();
-        return cart;
+        this.element = null;
 
     }
 
@@ -101,7 +94,7 @@ function retrieveFromLocalStorage() {
 
 // function to save updated cart as string to local storage
 
-function saveToLocalStorage(cart) {
+function saveToLocalStorage() {
 
     // convert cart array into string of text
 
@@ -110,5 +103,27 @@ function saveToLocalStorage(cart) {
     // save cart string to local storage
 
     localStorage.setItem('storedCart', cartString);
+
+}
+
+// create a new cart array, will change depending on data in local storage
+
+let cart = new Array();
+
+// function to parse cart array from local storage
+
+function retrieveFromLocalStorage() {
+
+    if (localStorage.getItem('storedCart') != null) {
+        
+        // get cart string from local storage
+
+        const cartString = localStorage.getItem('storedCart');
+        
+        // assign cart string to cart array
+
+        cart = JSON.parse(cartString);
+
+    } 
 
 }

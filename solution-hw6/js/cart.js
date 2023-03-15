@@ -1,36 +1,12 @@
-// code provided by hw5 instructions, standardizing properties of roll class
-
-class Roll {
-
-    constructor(rollType, rollGlazing, packSize, basePrice) {
-
-        this.type = rollType;
-        this.glazing =  rollGlazing;
-        this.size = packSize;
-        this.basePrice = basePrice;
-
-        this.element = null;
-
-    }
-
-}
-
 // retrieve cart from local storage upon loading
 
-let cart = retrieveFromLocalStorage();
+retrieveFromLocalStorage();
 
-// make new roll and add it to the cart array, returns the roll to be used by other functions
-
-function addNewRoll(rollType, rollGlazing, packSize, basePrice) {
-    const roll = new Roll(rollType, rollGlazing, packSize, basePrice);
-    cart.push(roll);
-    return
-}
-
-// calls function to create every roll in the cart array, to be displayed on the DOM
+// call functions to create roll in the cart array, update relevant attributes
 
 for (const roll of cart) {
     createCartElement(roll);
+    updateCartElement(roll);
 }
 
 function createCartElement(roll) {
@@ -54,10 +30,6 @@ function createCartElement(roll) {
     const cartList = document.querySelector('.cart-list');
     cartList.append(roll.element);
 
-    // calls function to update the details inside the cart listings to reflect each entry
-
-    updateCartElement(roll);
-
 }
 
 function deleteCartItem(roll) {
@@ -71,10 +43,15 @@ function deleteCartItem(roll) {
     roll.element.remove();
     cart.splice(rollIndex, 1);
 
-    // calls function to update the total price after roll is deleted
+    // update local storage to account for removed roll
+
+    saveToLocalStorage();
+
+    // calls function to update the total price, print entire cart array
 
     updateTotal();
-    
+    console.log(cart);
+
 }
 
 function updateCartElement(roll) {
