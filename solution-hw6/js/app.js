@@ -54,6 +54,10 @@ rollImage.src = './assets/products/' + rolls[rollType]["imageFile"];
 rollName.innerText = rollType + ' Cinnamon Roll';
 displayPrice.innerText = '$ ' + basePrice;
 
+// retrieve cart from local storage upon loading
+
+let cart = retrieveFromLocalStorage();
+
 // add event listeners to glazing and pack size dropdowns, reacting on change
 
 glazingOptions.addEventListener('change', onSelectValueChange);
@@ -98,10 +102,6 @@ class Roll {
 
 }
 
-// create empty array for cart, will be filled with roll class instances
-
-let cart = new Array();
-
 // retrieve cart button from DOM and add an event listener for clicks
 
 let cartButton = document.querySelector('.add-to-cart');
@@ -109,7 +109,7 @@ cartButton.addEventListener('click', addRollToCart);
 
 // function to add selected roll to the cart
 
-function addRollToCart () {
+function addRollToCart() {
 
     // locate index to find type of glazing
 
@@ -125,41 +125,18 @@ function addRollToCart () {
 
     const roll = new Roll(rollType, rollGlazing, packSize, basePrice);
 
-    // add selected roll to the cart and print entire cart array
+    // add selected roll to the cart
 
     cart.push(roll);
+
+    // call function to save updated cart to local storage
+
+    saveToLocalStorage(cart);
+
+    // print entire cart array
+
     console.log(cart);
 
 }
 
-// function submitRoll() {
-
-//     const rollName = document.querySelector('.page-heading');
-//     const rollNameText = rollName.value;
-
-//     // const rollImage = document.querySelector('.big-bun-image');
-//     // const rollImageURL = rollImage.src;
-
-//     // const rollPrice = document.querySelector('.big-bun-price');
-//     // const rollPriceText = rollPrice.value;
-
-//     const rollGlazing = document.querySelector('#glazing-customize');
-//     const rollGlazingText = rollGlazing.value;
-
-//     const rollPackSize = document.querySelector('#pack-customize');
-//     const rollPackSizeText = rollPackSize.value;
-
-//     const basePrice = rolls[rollType]["basePrice"];
-//     const basePriceText = basePrice.value;
-
-//     const roll = addNewRoll(rollNameText, rollGlazingText, rollPackSizeText, basePriceText);
-//     createCartElement(roll);
-// }
-
-// // make new roll and add it to the cart array, returns the roll to be used by other functions
-
-// function addNewRoll(rollType, rollGlazing, packSize, basePrice) {
-//     const roll = new Roll(rollType, rollGlazing, packSize, basePrice);
-//     cart.push(roll);
-//     return roll;
-// }
+// localStorage.clear()

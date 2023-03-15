@@ -15,24 +15,17 @@ class Roll {
 
 }
 
-// create new array to represent cart of items
+// retrieve cart from local storage upon loading
 
-const cart = new Array();
+let cart = retrieveFromLocalStorage();
 
 // make new roll and add it to the cart array, returns the roll to be used by other functions
 
 function addNewRoll(rollType, rollGlazing, packSize, basePrice) {
     const roll = new Roll(rollType, rollGlazing, packSize, basePrice);
     cart.push(roll);
-    return roll;
+    return
 }
-
-// initialize four given rolls for the cart
-
-const cartOriginal = addNewRoll('Original', 'Sugar milk', 1, 2.49);
-const cartWalnut = addNewRoll('Walnut', 'Vanilla milk', 12, 3.49);
-const cartRaisin = addNewRoll('Raisin', 'Sugar milk', 3, 2.99);
-const cartApple = addNewRoll('Apple', 'Original', 3, 3.49);
 
 // calls function to create every roll in the cart array, to be displayed on the DOM
 
