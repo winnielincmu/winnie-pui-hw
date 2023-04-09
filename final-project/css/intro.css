@@ -1,14 +1,84 @@
 /* general settings */
 
-body {
-    font-family: Arial, Helvetica, sans-serif;
+body, html {
+    height: 100%;
+    margin: 0px;
+}
+
+@font-face {
+    font-family: AntonRegular;
+    src: url('../assets/fonts/anton-regular.ttf');
+
+    font-family: KDA;
+    src: url('../assets/fonts/kda.ttf');
+}
+
+.landing-bg {
     background-image: url('../assets/background/universe-background.jpeg');
-    background-size: 120% 380%;
+    background-size: cover;
     background-repeat: no-repeat;
+    height: 100%;
+    background-position: left;
+}
+
+#content-container {
+    height: 500px;
+    position: relative;
+}
+
+.parent-logo {
+    position: absolute;
 }
 
 .logo {
-    margin-top: 50px;
+    margin-top: 20px;
     width: 850px;
-    height: 250px;
+    height: 270px;
+}
+
+.child-emblems {
+    position: absolute;
+    margin-left: 250px;
+    margin-top: 250px;
+}
+
+.emblem {
+    margin-left: 25px;
+    margin-right: 25px;
+    width: 40px;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-image: linear-gradient(transparent, #211F2C);
+    display: flex;
+}
+
+#empty {
+    width: 55%;
+}
+
+#enter-message {
+    flex-shrink: 0;
+    text-align: left;
+    color: white;
+}
+#space-prompt {
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-weight: 600;
+    font-size: 22px;
+    margin-top: 40px;
+}
+
+#universe-prompt {
+    text-transform: uppercase;
+    font-family: AntonRegular;
+    font-weight: bold;
+    font-size: 30px;
+    margin-bottom: 90px;
 }
