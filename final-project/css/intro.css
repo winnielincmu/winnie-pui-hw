@@ -1,0 +1,14 @@
+/* general settings */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url('../assets/background/universe-background.jpeg');
+    background-size: 120% 380%;
+    background-repeat: no-repeat;
+}
+
+.logo {
+    margin-top: 50px;
+    width: 850px;
+    height: 250px;
+}
