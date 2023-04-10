@@ -6,11 +6,11 @@ body, html {
 }
 
 @font-face {
-    font-family: AntonRegular;
-    src: url('../assets/fonts/anton-regular.ttf');
+    font-family: 'Anton';
+    src: url('../assets/fonts/anton-regular.ttf') format('truetype');
 
-    font-family: KDA;
-    src: url('../assets/fonts/kda.ttf');
+    font-family: 'KDA';
+    src: url('../assets/fonts/kda.ttf') format('truetype');
 }
 
 .landing-bg {
@@ -66,19 +66,25 @@ footer {
     text-align: left;
     color: white;
 }
-#space-prompt {
+#enter-message p {
     text-transform: uppercase;
     font-family: Arial, Helvetica, sans-serif;
     font-style: italic;
     font-weight: 600;
     font-size: 22px;
     margin-top: 40px;
+    margin-bottom: 10px;
 }
 
-#universe-prompt {
+#enter-message h1 {
     text-transform: uppercase;
-    font-family: AntonRegular;
-    font-weight: bold;
-    font-size: 30px;
-    margin-bottom: 90px;
+    font-family: 'Anton';
+    margin-top: 0px;
+    font-size: 60px;
+    letter-spacing: 3px;
+    margin-bottom: 80px;
+}
+
+svg {
+    position: absolute;
 }
