@@ -97,20 +97,16 @@ iframe {
     position: fixed;
 }
 
-#skip {
+.buttons {
     position: relative;
     display: flex;
-    justify-content: flex-end;
-    margin-right: 150px;
+    justify-content: center;
 }
 
-#skip p {
-    width: 200px;
-    height: 50px;
+.buttons div {
     text-align: center;
     padding-top: 7px;
     letter-spacing: 1px;
-    font-size: 28px;
     color: white;
     background-color: #211F2C;
     text-transform: uppercase;
@@ -118,4 +114,16 @@ iframe {
     border-radius: 45px;
     font-family: 'Anton';
     margin: 0px;
+}
+
+.skip {
+    width: 200px;
+    height: 50px;
+    font-size: 28px;
+}
+
+.back {
+    width: 110px;
+    height: 35px;
+    font-size: 20px;
 }
