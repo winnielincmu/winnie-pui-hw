@@ -24,7 +24,8 @@ body, html {
 }
 
 #content-container {
-    height: 500px;
+    height: 300px;
+    width: 750px;
     position: relative;
 }
 
@@ -33,21 +34,21 @@ body, html {
 }
 
 .logo {
-    margin-top: 20px;
-    width: 830px;
-    height: 270px;
+    margin-top: 40px;
+    width: 700px;
+    height: 210px;
 }
 
 .child-emblems {
     position: absolute;
-    margin-left: 220px;
-    margin-top: 250px;
+    margin-left: 190px;
+    margin-top: 220px;
 }
 
 .emblem {
-    margin-left: 25px;
-    margin-right: 25px;
-    width: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 35px;
 }
 
 footer {
@@ -66,7 +67,6 @@ footer {
 
 #enter-message {
     text-align: left;
-    color: white;
 }
 
 #enter-message p {
@@ -74,23 +74,38 @@ footer {
     font-family: Arial, Helvetica, sans-serif;
     font-style: italic;
     font-weight: 600;
-    font-size: 22px;
+    font-size: 20px;
     margin-top: 40px;
     margin-bottom: 10px;
+    color: #eee4fb;
 }
+
+/* code for neon flicker animation from: https://www.w3schools.com/howto/howto_css_glowing_text.asp */
 
 #enter-message h1 {
     text-transform: uppercase;
     font-family: 'Anton';
     margin-top: 0px;
-    font-size: 60px;
+    font-size: 65px;
     letter-spacing: 3px;
     margin-bottom: 80px;
+    color: white;
+    animation: neon-flicker 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes neon-flicker {
+    from {
+      text-shadow: 0 0 3px white, 0 0 10px #ca8bf5, 0 0 20px #7678bc;
+    }
+    to {
+      text-shadow: 0 0 10px white, 0 0 20px #ca8bf5, 0 0 30px #7678bc;
+    }
 }
 
 /* music video demo page */
 
 iframe {
+    background-color: black;
     margin: 0px;
     width: 100%;
     height: 100%;
@@ -100,7 +115,6 @@ iframe {
 .buttons {
     position: relative;
     display: flex;
-    justify-content: center;
 }
 
 .buttons div {
@@ -114,6 +128,7 @@ iframe {
     border-radius: 45px;
     font-family: 'Anton';
     margin: 0px;
+    flex-grow: 1;
 }
 
 .skip {
