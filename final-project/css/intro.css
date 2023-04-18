@@ -115,30 +115,42 @@ iframe {
 .buttons {
     position: relative;
     display: flex;
+    text-transform: uppercase;
+    margin-right: 200px;
+    visibility: hidden;
 }
 
-.buttons div {
+.skip {
     text-align: center;
     padding-top: 7px;
     letter-spacing: 1px;
-    color: white;
     background-color: #211F2C;
-    text-transform: uppercase;
     border: solid 1px white;
     border-radius: 45px;
     font-family: 'Anton';
     margin: 0px;
-    flex-grow: 1;
-}
-
-.skip {
     width: 200px;
+    color: white;
     height: 50px;
     font-size: 28px;
 }
 
 .back {
-    width: 110px;
-    height: 35px;
-    font-size: 20px;
+    width: 80px;
+    padding-top: 2px;
+    margin-right: 10px;
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-weight: 600;
+    color: #b3d0f5;
+}
+
+.button-spacing {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.button-spacing div {
+    margin-top: 30px;
 }
