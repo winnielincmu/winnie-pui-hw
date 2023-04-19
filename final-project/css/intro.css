@@ -13,6 +13,10 @@ body, html {
     src: url('../assets/fonts/kda.ttf') format('truetype');
 }
 
+a {
+    text-decoration: none;
+}
+
 /* landing page */
 
 .landing-bg {
@@ -90,7 +94,7 @@ footer {
     letter-spacing: 3px;
     margin-bottom: 80px;
     color: white;
-    animation: neon-flicker 1.5s ease-in-out infinite alternate;
+    animation: neon-flicker 2s ease-in-out infinite alternate;
 }
 
 @keyframes neon-flicker {
@@ -117,7 +121,7 @@ iframe {
     display: flex;
     text-transform: uppercase;
     margin-right: 200px;
-    visibility: hidden;
+    opacity: 0;
 }
 
 .skip {
@@ -130,20 +134,28 @@ iframe {
     font-family: 'Anton';
     margin: 0px;
     width: 200px;
-    color: white;
     height: 50px;
     font-size: 28px;
+    color: white;
+}
+
+.skip:hover {
+    color: #c0f3f2;
+    border-color: #c0f3f2;
 }
 
 .back {
     width: 80px;
-    padding-top: 2px;
     margin-right: 10px;
     font-size: 17px;
     font-family: Arial, Helvetica, sans-serif;
     font-style: italic;
     font-weight: 600;
-    color: #b3d0f5;
+    color: white;
+}
+
+.back:hover {
+    color: #c0f3f2;
 }
 
 .button-spacing {
@@ -154,3 +166,4 @@ iframe {
 .button-spacing div {
     margin-top: 30px;
 }
+
