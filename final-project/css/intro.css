@@ -94,7 +94,7 @@ footer {
     letter-spacing: 3px;
     margin-bottom: 80px;
     color: white;
-    animation: neon-flicker 2s ease-in-out infinite alternate;
+    animation: neon-flicker 0.75s ease-in-out infinite alternate;
 }
 
 @keyframes neon-flicker {
@@ -102,7 +102,7 @@ footer {
       text-shadow: 0 0 3px white, 0 0 10px #ca8bf5, 0 0 20px #7678bc;
     }
     to {
-      text-shadow: 0 0 10px white, 0 0 20px #ca8bf5, 0 0 30px #7678bc;
+      text-shadow: 0 0 20px white, 0 0 30px #ca8bf5, 0 0 40px #7678bc;
     }
 }
 
