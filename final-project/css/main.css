@@ -57,18 +57,7 @@ a {
     height: 35px;
 }
 
-/* ahri member introduction */
-
-svg {
-    position: absolute;
-    stroke: #211F2C;
-    stroke-width: 1px;
-    fill: none;
-    margin-top: 50px;
-    margin-left: 40px;
-    width: 44%;
-    height: auto;
-}
+/* member introduction */
 
 .member-info {
     background-image: url(../assets/background/gradient-bg.jpeg);
@@ -76,7 +65,8 @@ svg {
     background-repeat: no-repeat;
     height: 610px;
     margin-right: 20px;
-    border-radius: 0px 45px 45px 0px;
+    margin-left: 20px;
+    border-radius: 45px 45px 45px 45px;
     margin-top: 25px;
     overflow: hidden;
 }
@@ -84,16 +74,20 @@ svg {
 #title {
     font-family: 'Anton';
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     color: #211F2C;
     text-transform: uppercase;
     margin-bottom: 0px;
-    height: 180px;
+    height: 200px;
+}
+
+#title div {
+    display: flex;
 }
 
 .member-emblems {
-    margin-top: 75px;
-    margin-right: 550px;
+    margin-top: 30px;
+    margin-left: 30px;
     height: 90px;
     width: 90px;
     flex-shrink: 0;
@@ -113,7 +107,7 @@ h2 {
 }
 
 .member-photos {
-    position: sticky;
+    position: relative;
     width: 60%;
     height: auto;
 }
@@ -125,7 +119,7 @@ h2 {
     text-align: right;
 }
 
-#ahri-name {
+#member-name {
     font-family: 'Anton';
     color: white;
     text-transform: uppercase;
@@ -134,8 +128,9 @@ h2 {
     opacity: 80%;
     font-size: 70px;
     letter-spacing: 2px;
-    margin-top: 30px;
+    margin-top: 0px;
     margin-bottom: 0px;
+    flex-shrink: 0;
 }
 
 .content p {
@@ -146,6 +141,7 @@ h2 {
     font-size: 21px;
     margin-top: 0px;
     color: #642084;
+    flex-shrink: 0;
 }
 
 .member-bio {
@@ -153,39 +149,94 @@ h2 {
     font-family: Arial, Helvetica, sans-serif;
     text-align: right;
     font-size: 17px;
+    flex-shrink: 0;
 }
 
 strong {
     color: #642084;
 }
 
+.buttons {
+    display: flex;
+    margin-top: 20px;
+    font-size: 22px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    justify-content: flex-end;
+}
+
 .more-button {
     display: flex;
     background-color: #211F2C;
     justify-content: space-around;
-    margin-top: 15px;
     width: 220px;
     padding: 15px;
-    border-radius: 45px;
     align-items: center;
-}
-
-.more-button span {
+    border-radius: 45px;
     font-family: 'Anton';
     color: #c0f3f2;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    font-size: 22px;
 }
 
 .more-button img {
     width: 20%;
-    height: 19%;
 }
 
-.button-link {
+.member-link {
     display: block;
     width: 250px;
-    height: auto;
-    margin-left: 300px;
+}
+
+.other-profiles {
+    display: flex;
+    margin-left: 30px;
+}
+
+.member-button {
+    text-align: center;
+    background-color: #211F2C;
+    padding: 15px;
+    width: 35px;
+    height: 35px;
+    border-radius: 45px;
+    margin-left: 10px;
+}
+
+.member-button img {
+    padding-top: 5px;
+    vertical-align: middle;
+    width: 65%;
+}
+
+/* footer information */
+
+footer {
+    height: 140px;
+    margin-top: 60px;
+    margin-left: 20px;
+    margin-right: 20px;
+    justify-content: space-between;
+    display: flex;
+}
+
+footer img {
+    width: 40px;
+    margin-right: 20px;
+}
+
+#credit-statement {
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    color: white;
+    font-size: 12px;
+    text-align: right;
+    line-height: 20px;
+    width: 750px;
+}
+
+iframe {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    opacity: 90%;
 }
