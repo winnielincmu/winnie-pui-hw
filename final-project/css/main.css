@@ -59,10 +59,133 @@ a {
 
 /* ahri member introduction */
 
-.ahri-info {
-    background-image: url('../assets/background/gradient-bg.jpg');
+svg {
+    position: absolute;
+    stroke: #211F2C;
+    stroke-width: 1px;
+    fill: none;
+    margin-top: 50px;
+    margin-left: 40px;
+    width: 44%;
+    height: auto;
+}
+
+.member-info {
+    background-image: url(../assets/background/gradient-bg.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
-    width: 100%;
-    height: 500px;
+    height: 610px;
+    margin-right: 20px;
+    border-radius: 0px 45px 45px 0px;
+    margin-top: 25px;
+    overflow: hidden;
+}
+
+#title {
+    font-family: 'Anton';
+    display: flex;
+    justify-content: flex-end;
+    color: #211F2C;
+    text-transform: uppercase;
+    margin-bottom: 0px;
+    height: 180px;
+}
+
+.member-emblems {
+    margin-top: 75px;
+    margin-right: 550px;
+    height: 90px;
+    width: 90px;
+    flex-shrink: 0;
+}
+
+h1 {
+    margin-left: 25px;
+    font-size: 100px;
+    letter-spacing: 7px;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+h2 {
+    letter-spacing: 1px;
+    margin-top: 43px;
+}
+
+.member-photos {
+    position: sticky;
+    width: 60%;
+    height: auto;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 25px;
+    text-align: right;
+}
+
+#ahri-name {
+    font-family: 'Anton';
+    color: white;
+    text-transform: uppercase;
+    -webkit-text-stroke: 0.2px;
+    -webkit-text-stroke-color: #211F2C;
+    opacity: 80%;
+    font-size: 70px;
+    letter-spacing: 2px;
+    margin-top: 30px;
+    margin-bottom: 0px;
+}
+
+.content p {
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-style: italic;
+    font-weight: 600;
+    font-size: 21px;
+    margin-top: 0px;
+    color: #642084;
+}
+
+.member-bio {
+    margin-top: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: right;
+    font-size: 17px;
+}
+
+strong {
+    color: #642084;
+}
+
+.more-button {
+    display: flex;
+    background-color: #211F2C;
+    justify-content: space-around;
+    margin-top: 15px;
+    width: 220px;
+    padding: 15px;
+    border-radius: 45px;
+    align-items: center;
+}
+
+.more-button span {
+    font-family: 'Anton';
+    color: #c0f3f2;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 22px;
+}
+
+.more-button img {
+    width: 20%;
+    height: 19%;
+}
+
+.button-link {
+    display: block;
+    width: 250px;
+    height: auto;
+    margin-left: 300px;
 }
