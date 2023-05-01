@@ -133,7 +133,7 @@ h2 {
     flex-shrink: 0;
 }
 
-.content p {
+#member-title {
     font-family: Arial, Helvetica, sans-serif;
     text-transform: uppercase;
     font-style: italic;
@@ -169,8 +169,9 @@ strong {
     display: flex;
     background-color: #211F2C;
     justify-content: space-around;
-    width: 220px;
+    width: 75%;
     padding: 15px;
+    padding-left: 20px;
     align-items: center;
     border-radius: 45px;
     font-family: 'Anton';
@@ -183,12 +184,12 @@ strong {
 
 .member-link {
     display: block;
-    width: 250px;
+    width: 75%;
 }
 
 .other-profiles {
     display: flex;
-    margin-left: 30px;
+    margin-left: 40px;
 }
 
 .member-button {
