@@ -45,10 +45,10 @@ a {
     justify-content: flex-end;
     display: flex;
     margin-top: 25px;
+    column-gap: 30px;
 }
 
 #league {
-    margin-right: 30px;
     height: 35px;
 }
 
@@ -152,8 +152,14 @@ h2 {
     flex-shrink: 0;
 }
 
-strong {
+#role {
     color: #642084;
+    font-weight: bold;
+}
+
+#strengths {
+    color: #642084;
+    font-weight: bold;
 }
 
 .buttons {
@@ -163,32 +169,30 @@ strong {
     text-transform: uppercase;
     letter-spacing: 1px;
     justify-content: flex-end;
+    column-gap: 60px;
 }
 
 .more-button {
     display: flex;
     background-color: #211F2C;
-    justify-content: space-around;
-    width: 65%;
-    padding: 15px;
-    padding-left: 20px;
+    justify-content: center;
     align-items: center;
     border-radius: 45px;
+    padding: 15px;
     font-family: 'Anton';
     color: #c0f3f2;
+    flex-shrink: 0;
+    column-gap: 5px;
 }
 
 .more-button img {
-    width: 20%;
-}
-
-.member-link {
-    display: block;
-    width: auto;
+    width: 35px;
 }
 
 .other-profiles {
     display: flex;
+    justify-content: center;
+    column-gap: 10px;
 }
 
 .member-button {
@@ -198,7 +202,6 @@ strong {
     width: 35px;
     height: 35px;
     border-radius: 45px;
-    margin-left: 10px;
 }
 
 .member-button img {
@@ -218,9 +221,14 @@ footer {
     display: flex;
 }
 
+#music-links {
+    display: flex;
+    column-gap: 15px;
+    height: 40px;
+}
+
 footer img {
     width: 40px;
-    margin-right: 20px;
 }
 
 #credit-statement {
