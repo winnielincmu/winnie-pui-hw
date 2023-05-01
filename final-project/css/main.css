@@ -169,7 +169,7 @@ strong {
     display: flex;
     background-color: #211F2C;
     justify-content: space-around;
-    width: 75%;
+    width: 65%;
     padding: 15px;
     padding-left: 20px;
     align-items: center;
@@ -184,12 +184,11 @@ strong {
 
 .member-link {
     display: block;
-    width: 75%;
+    width: auto;
 }
 
 .other-profiles {
     display: flex;
-    margin-left: 40px;
 }
 
 .member-button {

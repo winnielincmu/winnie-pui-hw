@@ -31,6 +31,16 @@ memberButtonCaption.innerText = 'More On ' + memberIdentity;
 let moreButton = document.querySelector('.more-button');
 
 if (memberIdentity === "Evelynn") {
-    moreButton.style.width = "85%";
-    memberLink.style.width = "85%";
+    moreButton.style.width = "75%";
+    memberLink.style.width = "75%";
+    memberImage.style.right = 40 + "px";
+    memberImage.style.bottom = 40 + "px";
 };
+
+if (memberIdentity === "Kai'sa") {
+    memberImage.style.bottom = 40 + "px";
+}
+
+if (memberIdentity === "Akali") {
+    memberImage.style.right = 40 + "px";
+}
