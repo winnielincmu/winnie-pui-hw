@@ -75,10 +75,10 @@ footer {
 
 #enter-message p {
     text-transform: uppercase;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-style: italic;
     font-weight: 600;
-    font-size: 20px;
+    font-size: 22px;
     margin-top: 40px;
     margin-bottom: 10px;
     color: #eee4fb;
@@ -146,9 +146,8 @@ iframe {
 
 .back {
     width: 80px;
-    margin-right: 10px;
-    font-size: 17px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-style: italic;
     font-weight: 600;
     color: white;

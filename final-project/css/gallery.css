@@ -1,5 +1,7 @@
+/* general settings */
+
 body {
-    background-image: linear-gradient(#211F2C, #decfee, #9fdbe6, #7678bc, #ca8bf5, #211F2C);
+    background-image: linear-gradient(#38095b, #f3b7ed, #9fdbe6, #7789d1, #ca8bf5, #0b0964);
     margin-left: 20px;
     margin-right: 20px;
 }
@@ -73,7 +75,7 @@ a {
     text-transform: uppercase;
     color: white;
     letter-spacing: 2px;
-    font-size: 75px;
+    font-size: 74px;
     display: flex;
     justify-content: flex-end;
     flex-shrink: 0;
@@ -110,10 +112,10 @@ footer img {
 }
 
 #credit-statement {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-style: italic;
     color: white;
-    font-size: 12px;
+    font-size: 14px;
     text-align: right;
     line-height: 20px;
     width: 750px;

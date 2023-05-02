@@ -1,0 +1,259 @@
+/* general settings */
+
+body {
+    background-image: url(../assets/background/rooftop.jpeg);
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+@font-face {
+    font-family: 'Anton';
+    src: url('../assets/fonts/anton-regular.ttf') format('truetype');
+
+    font-family: 'KDA';
+    src: url('../assets/fonts/kda.ttf') format('truetype');
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+/* content for navigation bar */
+
+nav {
+    display: flex;
+    align-items: center;
+    padding-bottom: 25px;
+    border-bottom: solid white 1px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.logo {
+    font-family: KDA;
+    font-size: 35px;
+    -webkit-background-clip: text;
+    flex-shrink: 0;
+    margin-bottom: 0px;
+}
+
+/* text gradient referenced from: https://unused-css.com/blog/css-text-gradient/ */
+
+.gradient {
+    background-image: linear-gradient(315deg, #a5c3e9, #c0f3f2, #eff3ee, #c9d2f5, #b9bafa);
+    background-size: 100%;
+    color: transparent;
+}
+
+.branding {
+    flex-grow: 1;
+    justify-content: flex-end;
+    display: flex;
+    margin-top: 25px;
+    column-gap: 30px;
+}
+
+#league {
+    height: 35px;
+}
+
+#riot-games {
+    height: 35px;
+}
+
+/* title and subheading */
+
+section {
+    margin-top: 160px;
+    display: flex;
+    justify-content: center;
+    column-gap: 50px;
+    align-items: center;
+    margin-bottom: 160px;
+}
+
+#overview-title {
+    font-family: "Anton";
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 190px;
+    color: white;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+#subheading {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 1px;
+    color: white;
+    font-size: 36px;
+    text-transform: uppercase;
+}
+
+section h2 {
+    background: rgba(33, 31, 44, .80);
+    padding: 40px;
+    border: solid white 1px;
+    border-radius: 0px 100px 0px 100px;
+}
+
+#subheading span {
+    color: #e6a0f1;
+}
+
+/* main content including text, images, links, and a music player */
+
+#content {
+    display: flex;
+    background-color: #211F2C;
+    border-radius: 0px 110px 0px 110px;
+    column-gap: 20px;
+}
+
+#content p {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    color: white;
+    line-height: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 50px;
+    margin-top: 40px;
+}
+
+strong {
+    -webkit-background-clip: text;
+}
+
+#content img {
+    width: 450px;
+    height: auto;
+    margin: 20px;
+    border-radius: 0px 100px 0px 100px;
+    border: solid white;
+}
+
+#signatures {
+    display: flex;
+    justify-content: space-around;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 150px;
+}
+
+#signatures img {
+    width: 20%;
+    height: auto;
+}
+
+#social-media {
+    display: flex;
+    color: white;
+    text-transform: uppercase;
+    background-color: #211F2C;
+    align-items: center;
+    border: solid white 1px;
+    border-radius: 100px 0px 100px 0px;
+}
+
+#diamond-caption {
+    display: flex;
+    font-family: "Anton";
+    align-items: center;
+    font-size: 60px;
+    justify-content: center;
+}
+
+#diamond-caption img {
+    width: 20%;
+    height: auto;
+    margin-left: 10px;
+}
+
+.platform-icons {
+    width: 25%;
+    height: auto;
+    flex-shrink: 0;
+}
+
+#social-media p {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    flex-shrink: 0;
+    font-weight: bold;
+}
+
+/* spotify music player */
+
+#music-player-lg {
+    margin-top: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid white 1px;
+    border-radius: 12px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 180px;
+}
+
+iframe {
+    width: 50%;
+    height: 500px;
+    border: solid white 1px;
+    border-radius: 12px;
+    flex-shrink: 0;
+}
+
+#fanclub {
+    font-family: "Anton";
+    color: white;
+    text-transform: uppercase;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 40px;
+    font-size: 80px;
+    text-align: center;
+}
+
+#fanclub:hover {
+    color: #e6a0f1;
+}
+
+/* footer information */
+
+footer {
+    margin-top: 120px;
+    justify-content: space-between;
+    display: flex;
+    border-top: solid white 1px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+#music-links {
+    display: flex;
+    column-gap: 15px;
+    height: 40px;
+}
+
+footer img {
+    width: 40px;
+}
+
+#credit-statement {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
+    color: white;
+    font-size: 14px;
+    text-align: right;
+    line-height: 20px;
+    width: 750px;
+}

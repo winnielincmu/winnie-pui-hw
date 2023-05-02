@@ -134,11 +134,11 @@ h2 {
 }
 
 #member-title {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-transform: uppercase;
     font-style: italic;
     font-weight: 600;
-    font-size: 21px;
+    font-size: 26px;
     margin-top: 0px;
     color: #642084;
     flex-shrink: 0;
@@ -146,7 +146,7 @@ h2 {
 
 .member-bio {
     margin-top: 20px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-align: right;
     font-size: 17px;
     flex-shrink: 0;
@@ -184,6 +184,13 @@ h2 {
     color: #c0f3f2;
     flex-shrink: 0;
     column-gap: 5px;
+    border: solid #c0f3f2 1px;
+}
+
+.more-button:hover {
+    border-color: #211F2C;
+    background-color: transparent;
+    color: #211F2C;
 }
 
 .more-button img {
@@ -203,6 +210,13 @@ h2 {
     width: 35px;
     height: 35px;
     border-radius: 45px;
+    border: solid #c0f3f2 1px;
+}
+
+.member-button:hover {
+    border-color: #211F2C;
+    background-color: transparent;
+    color: #211F2C;
 }
 
 .member-button img {
@@ -233,10 +247,10 @@ footer img {
 }
 
 #credit-statement {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-style: italic;
     color: white;
-    font-size: 12px;
+    font-size: 14px;
     text-align: right;
     line-height: 20px;
     width: 750px;
