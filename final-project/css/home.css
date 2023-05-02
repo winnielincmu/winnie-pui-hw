@@ -1,0 +1,197 @@
+/* general settings */
+
+body, html {
+    margin: 0px;
+    height: 100%;
+    background-color: #211F2C;
+}
+
+@font-face {
+    font-family: 'Anton';
+    src: url('../assets/fonts/anton-regular.ttf') format('truetype');
+
+    font-family: 'KDA';
+    src: url('../assets/fonts/kda.ttf') format('truetype');
+}
+
+#home-bg {
+    background-image: url('../assets/background/universe-zoomed-out.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 140%;
+    height: 140%;
+    background-position: center;
+    overflow-x: scroll;
+}
+
+/* naviation links */
+
+nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* text gradient referenced from: https://unused-css.com/blog/css-text-gradient/ */
+
+.gradient {
+    background-image: linear-gradient(315deg, #a5c3e9, #c0f3f2, #eff3ee, #c9d2f5, #b9bafa);
+    background-size: 100%;
+    color: transparent;
+}
+
+.branding {
+    flex-grow: 1;
+    justify-content: flex-end;
+    display: flex;
+    margin-top: 25px;
+    column-gap: 30px;
+}
+
+#league {
+    height: 35px;
+}
+
+#riot-games {
+    margin-right: 20px;
+    height: 35px;
+}
+
+.welcome {
+    font-family: 'Anton';
+    text-transform: uppercase;
+    -webkit-background-clip: border-box;
+    font-size: 30px;
+    mix-blend-mode: screen;
+    color: black;
+    letter-spacing: 1px;
+    margin-top: 80px;
+    padding-top: 5px;
+    padding-bottom: 30px;
+    text-align: right;
+    padding-right: 20px;
+    width: 300px;
+    margin-bottom: 0px;
+}
+
+.kda {
+    font-family: 'KDA';
+    font-size: 130px;
+    -webkit-background-clip: text;
+    margin-top: 0px;
+    margin-left: 148px;
+}
+
+.horizontal-position {
+    display: flex;
+    height: 575px;
+}
+
+/* circlar mask referenced from: https://community.intuiface.com/t/create-a-circular-mask-for-videos/4928 */
+
+.video-mask {
+    width: 375px;
+    height: 375px;
+    overflow: hidden;
+    border-radius: 100%;
+    border: solid white 2px;
+}
+
+.member-videos {
+    width: 375px;
+    height: 400px;
+    object-fit: cover;
+}
+
+#akali {
+    margin-left: 400px;
+}
+
+#ahri {
+    margin-left: 500px;
+    margin-top: 170px;
+}
+
+#evelynn {
+    float: right;
+    margin-top: 200px;
+    margin-right: 550px;
+}
+
+#kaisa {
+    margin-top: 600px;
+    margin-left: 250px;
+    margin-bottom: 200px;
+}
+
+h3 {
+    font-family: 'Anton';
+    color: #c0f3f2;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 25px;
+    width: 375px;
+    background-color: #211F2C;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+#ahri-caption {
+    margin-left: 500px;
+}
+
+#akali-caption {
+    margin-left: 400px;
+}
+
+#evelynn-caption {
+    margin-top: 200px;
+    margin-right: 550px;
+    text-align: end;
+}
+
+/* footer information */
+
+footer {
+    height: 160px;
+    margin-top: 60px;
+    margin-left: 20px;
+    margin-right: 20px;
+    justify-content: space-between;
+    display: flex;
+}
+
+#music-links {
+    display: flex;
+    column-gap: 15px;
+    height: 40px;
+}
+
+footer img {
+    width: 40px;
+}
+
+#credit-statement {
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    color: white;
+    font-size: 12px;
+    text-align: right;
+    line-height: 20px;
+    width: 750px;
+}
+
+/* spotify music player */
+
+iframe {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    opacity: 90%;
+}
