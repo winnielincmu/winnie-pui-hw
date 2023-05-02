@@ -7,13 +7,15 @@
 
     <meta charset="UTF-8">
     <title>K/DA Universe</title> 
+    <link rel="icon" type="image/x-icon" href="./assets/cutouts-and-logo/diamond.png">
     <link href="./css/home.css" rel="stylesheet">
-    <!-- <script defer src="./js/rollsData.js"></script> -->
 
   </head>
 
   <body>
     <diV id="home-bg">
+
+      <!-- navigaton with game links -->
 
       <nav>
   
@@ -24,37 +26,63 @@
   
       </nav>
 
+      <!-- title and first page link to K/DA information -->
+
       <div class="horizontal-position">
+
         <div>
           <h2 class="welcome gradient"> Welcome to </h2>
           <h1 class="kda gradient"> K/DA </h1>
         </div>
 
-        <div>
-          <div class="video-mask" id="ahri">
-            <video src="./assets/videos/ahri-live.mp4" class="member-videos" alt="animation of ahri" autoplay muted loop></video>
+        <div id="ahri">
+          <div>
+            <div class="video-mask">
+              <video src="./assets/videos/ahri-live.mp4" class="member-videos" alt="animation of ahri" autoplay muted loop></video>
+            </div>
+            <h3> Who is K/DA? </h3>
           </div>
-          <h3 id="ahri-caption"> Who is K/DA? </h3>
         </div>
+
       </div>
   
-      <div class="video-mask" id="akali">
-        <video src="./assets/videos/akali-live.mp4" class="member-videos" alt="animation of akali" autoplay muted loop></video>
-      </div>
-      <h3 id="akali-caption"> Meet the Members </h3>
+      <!-- second page to member profiles -->
 
-      <div class="video-mask" id="evelynn">
-        <video src="./assets/videos/evelynn-live.mp4" class="member-videos" alt="animation of evelynn" autoplay muted loop></video>
-      </div>
-      <div id="evelynn-caption">
-        <h3> Wallpaper Gallery </h3>
+      <div id="akali">
+        <div>
+          <div class="video-mask">
+            <a href="./members.html?member=Ahri"><video src="./assets/videos/akali-live.mp4" class="member-videos" alt="animation of akali" autoplay muted loop></video></a>
+          </div>
+          <a href="./members.html?member=Ahri"><h3> Meet the Members </h3></a>
+        </div>
       </div>
 
-      <div class="video-mask" id="kaisa">
-        <video src="./assets/videos/kaisa-live.mp4" class="member-videos" alt="animation of kai'sa" autoplay muted loop></video>
+      <!-- third page to gallery of photos -->
+
+      <div id="evelynn">
+        <div>
+          <div class="video-mask">
+            <a href="./gallery.html"><video src="./assets/videos/evelynn-live.mp4" class="member-videos" alt="animation of evelynn" autoplay muted loop></video></a>
+          </div>
+          <a href="./gallery.html"><h3> Wallpaper Gallery </h3></a>
+        </div>
       </div>
+
+      <!-- fourth page to describe collaboration artist -->
+
+      <div id="kaisa">
+        <div>
+          <div class="video-mask">
+            <video src="./assets/videos/kaisa-live.mp4" class="member-videos" alt="animation of kai'sa" autoplay muted loop></video>
+          </div>
+          <h3> Collaborations </h3>
+        </div>
+      </div>
+
+      <!-- standardized footer -->
 
       <footer>
+
         <div id="music-links">
           <a href="https://open.spotify.com/artist/4gOc8TsQed9eqnqJct2c5v" target="_blank" rel="noreferrer noopener"><img src="./assets/cutouts-and-logo/spotify.png" alt="spotify logo"></a>
           <a href="https://music.apple.com/us/artist/k-da/1439420229" target="_blank" rel="noreferrer noopener"><img src="./assets/cutouts-and-logo/itunes.png" alt="itunes logo"></a>
@@ -66,12 +94,10 @@
           Credit is given to the original artists and owners of the content used. This website is created by Winnie Lin
           as her final project for 05-430 Programmable User Interfaces.
         </div>
+
       </footer>
 
     </div>
-
-    <iframe src="https://open.spotify.com/embed/artist/4gOc8TsQed9eqnqJct2c5v?utm_source=generator&theme=0" allowtransparency="true" width="100%" height="80" frameBorder="0" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture" loading="lazy">
-    </iframe>
 
   </body>
 

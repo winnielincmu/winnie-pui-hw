@@ -165,15 +165,16 @@ h2 {
 .buttons {
     display: flex;
     margin-top: 20px;
-    font-size: 22px;
     text-transform: uppercase;
     letter-spacing: 1px;
     justify-content: flex-end;
-    column-gap: 60px;
+    column-gap: 35px;
 }
 
 .more-button {
     display: flex;
+    font-size: 20px;
+    height: 35px;
     background-color: #211F2C;
     justify-content: center;
     align-items: center;

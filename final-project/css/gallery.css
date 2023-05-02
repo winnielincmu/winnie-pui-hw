@@ -1,0 +1,130 @@
+body {
+    background-image: linear-gradient(#211F2C, #decfee, #9fdbe6, #7678bc, #ca8bf5, #211F2C);
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+@font-face {
+    font-family: 'Anton';
+    src: url('../assets/fonts/anton-regular.ttf') format('truetype');
+
+    font-family: 'KDA';
+    src: url('../assets/fonts/kda.ttf') format('truetype');
+}
+
+/* content for navigation bar */
+
+nav {
+    display: flex;
+    align-items: center;
+    margin-bottom: 70px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.logo {
+    font-family: KDA;
+    font-size: 35px;
+    -webkit-background-clip: text;
+    flex-shrink: 0;
+    margin-bottom: 0px;
+}
+
+/* text gradient referenced from: https://unused-css.com/blog/css-text-gradient/ */
+
+.gradient {
+    background-image: linear-gradient(315deg, #a5c3e9, #c0f3f2, #eff3ee, #c9d2f5, #b9bafa);
+    background-size: 100%;
+    color: transparent;
+}
+
+.branding {
+    flex-grow: 1;
+    justify-content: flex-end;
+    display: flex;
+    margin-top: 25px;
+    column-gap: 30px;
+}
+
+#league {
+    height: 35px;
+}
+
+#riot-games {
+    height: 35px;
+}
+
+/* stylizing the gallery format, inspired by: https://timnwells.medium.com/create-a-simple-responsive-image-gallery-with-html-and-css-fcb973f595ea*/
+
+#gallery {
+    column-count: 2;
+}
+
+#gallery img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+#gallery span {
+    font-family: "Anton";
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 2px;
+    font-size: 75px;
+    display: flex;
+    justify-content: flex-end;
+    flex-shrink: 0;
+    margin-right: 10px;
+    animation: neon-flicker 4s ease-in-out infinite alternate;
+}
+
+@keyframes neon-flicker {
+    from {
+      text-shadow: 0 0 3px white, 0 0 10px #ca8bf5, 0 0 20px #7678bc;
+    }
+    to {
+      text-shadow: 0 0 20px white, 0 0 30px #ca8bf5, 0 0 40px #7678bc;
+    }
+}
+
+/* footer information */
+
+footer {
+    height: 150px;
+    margin-top: 30px;
+    justify-content: space-between;
+    display: flex;
+}
+
+#music-links {
+    display: flex;
+    column-gap: 15px;
+    height: 40px;
+}
+
+footer img {
+    width: 40px;
+}
+
+#credit-statement {
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    color: white;
+    font-size: 12px;
+    text-align: right;
+    line-height: 20px;
+    width: 750px;
+}
+
+/* spotify music player */
+
+iframe {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    opacity: 90%;
+}
