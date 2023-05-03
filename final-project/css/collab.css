@@ -1,0 +1,193 @@
+/* general settings */
+
+body {
+    background-image: url('../assets/background/slanted-skyline.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+@font-face {
+    font-family: 'Anton';
+    src: url('../assets/fonts/anton-regular.ttf') format('truetype');
+
+    font-family: 'KDA';
+    src: url('../assets/fonts/kda.ttf') format('truetype');
+}
+
+/* content for navigation bar */
+
+nav {
+    display: flex;
+    align-items: center;
+    padding-bottom: 25px;
+    border-bottom: solid white 1px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.logo {
+    font-family: KDA;
+    font-size: 35px;
+    -webkit-background-clip: text;
+    flex-shrink: 0;
+    margin-bottom: 0px;
+}
+
+/* text gradient referenced from: https://unused-css.com/blog/css-text-gradient/ */
+
+.gradient {
+    background-image: linear-gradient(315deg, #a5c3e9, #c0f3f2, #eff3ee, #c9d2f5, #b9bafa);
+    background-size: 100%;
+    color: transparent;
+}
+
+.branding {
+    flex-grow: 1;
+    justify-content: flex-end;
+    display: flex;
+    margin-top: 25px;
+    column-gap: 30px;
+}
+
+#league {
+    height: 35px;
+}
+
+#riot-games {
+    height: 35px;
+}
+
+/* content about seraphine, k/da's featured artist */
+
+section {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    column-gap: 100px;
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+#introduction h1 {
+    font-family: "Anton";
+    letter-spacing: 2px;
+    font-size: 110px;
+    margin-bottom: 0px;
+    margin-top: 30px;
+    -webkit-background-clip: text;
+    text-transform: uppercase;
+}
+
+#introduction h2 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 26px;
+    font-style: italic;
+    -webkit-background-clip: text;
+    text-transform: uppercase;
+    margin-bottom: 70px;
+}
+
+#introduction p {
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 18px;
+    line-height: 25px;
+    margin-bottom: 30px;
+    background-color: rgba(33, 31, 44, .90);
+    padding: 25px;
+    border-radius: 0px 45px 0px 45px;
+}
+
+strong {
+    font-weight: bold;
+    color: #accff3;
+}
+
+.video-mask {
+    width: 500px;
+    height: 500px;
+    overflow: hidden;
+    border-radius: 100%;
+    border: solid white 2px;
+    flex-shrink: 0;
+    margin-top: 50px;
+}
+
+.member-videos {
+    width: 500px;
+    height: 525px;
+    object-fit: cover;
+}
+
+/* spotify music player */
+
+#seraphine-links {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 80px;
+}
+
+iframe {
+    opacity: 90%;
+}
+
+.more-button {
+    display: flex;
+    font-size: 20px;
+    height: 35px;
+    background-color:  rgba(33, 31, 44, .90);
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    padding: 20px;
+    font-family: 'Anton';
+    color: #accff3;
+    flex-shrink: 0;
+    column-gap: 5px;
+    border: solid #accff3 1px;
+}
+
+.more-button:hover {
+    border-color: #211F2C;
+    background-color: #accff3;
+    color: #211F2C;
+}
+
+.more-button img {
+    width: 35px;
+}
+
+/* footer information */
+
+footer {
+    margin-top: 60px;
+    justify-content: space-between;
+    display: flex;
+    border-top: solid white 1px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+#music-links {
+    display: flex;
+    column-gap: 15px;
+    height: 40px;
+}
+
+footer img {
+    width: 40px;
+}
+
+#credit-statement {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
+    color: white;
+    font-size: 14px;
+    text-align: right;
+    line-height: 20px;
+    width: 750px;
+}

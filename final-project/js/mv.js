@@ -1,3 +1,5 @@
+// time fade-in of skip and back buttons on the music video
+
 var opacity = 0;
 var intervalCount = 0;
 

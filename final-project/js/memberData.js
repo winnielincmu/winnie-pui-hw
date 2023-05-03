@@ -1,3 +1,5 @@
+// object listing all details of members to populate their profiles
+
 const members = {
     "Ahri": {
         "profilePic": "ahri.png",
