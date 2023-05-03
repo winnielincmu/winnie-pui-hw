@@ -8,10 +8,10 @@ const members = {
         "title": "The Queen",
         "bioTopBefore": "Ahri is the ",
         "role": "leader and main vocalist",
-        "bioTopAfter": " of K/DA. After being named the most talented new artist in the 2013 Pop Shine Awards, Ahri quickly became a fan favorite with her talented skills and striking looks. She is voiced by (G)I-DLE’s Miyeon.",
+        "bioTopAfter": " of K/DA. After being named the most talented new artist in the 2013 Pop Shine Awards, Ahri quickly became a fan favorite with her skills and striking looks. She is voiced by (G)I-DLE’s Miyeon.",
         "bioBottomBefore": "Besides K/DA, Ahri pursues her interests in ",
-        "strengths": "beauty and fashion",
-        "bioBottomAfter": ". She is the current face of FOXY cosmetics, has launched her own fragrance line, and attracts top fashion designers worldwide.",
+        "strengths": "beauty and fashion.",
+        "bioBottomAfter": "She is the current face of FOXY cosmetics, has launched her own fragrance line, and attracts top fashion designers worldwide.",
         "link": "https://www.leagueoflegends.com/en-us/champions/ahri/"
     },
 
@@ -51,7 +51,7 @@ const members = {
         "bioTopBefore": "Kai'sa is the ",
         "role": "main dancer and sub rapper",
         "bioTopAfter": " of K/DA. Having won many awards as a choreographer, Kai'sa passion for dance never fails to bring K/DA into the spotlight. She is voiced by Jaira Burns and Wolftyla.",
-        "bioBottomBefore": "Embracing a cosmopolitan approach to life, Kai'sa spends her time traveling around the world to learn about dance. Her perserverance towards perfection and pristine attention to detail makes her an",
+        "bioBottomBefore": "Embracing a cosmopolitan approach to life, Kai'sa spends her time traveling around the world to learn about dance. Her perserverance towards perfection and pristine detail makes her an",
         "strengths": "undeniable and captivating gem",
         "bioBottomAfter": " in K/DA.",
         "link": "https://www.leagueoflegends.com/en-us/champions/kai-sa/"
