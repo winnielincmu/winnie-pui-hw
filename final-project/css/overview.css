@@ -84,7 +84,7 @@ section {
     text-transform: uppercase;
     letter-spacing: 5px;
     font-size: 190px;
-    color: white;
+    color: #211F2C;
     margin-bottom: 0px;
     margin-top: 0px;
 }
@@ -202,6 +202,7 @@ strong {
     margin-left: 100px;
     margin-right: 100px;
     margin-bottom: 180px;
+    background-color: rgba(33, 31, 44, .80);
 }
 
 iframe {
@@ -251,7 +252,7 @@ footer img {
 #credit-statement {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-style: italic;
-    color: white;
+    color: #211F2C;
     font-size: 14px;
     text-align: right;
     line-height: 20px;
