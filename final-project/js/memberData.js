@@ -51,7 +51,7 @@ const members = {
         "bioTopBefore": "Kai'sa is the ",
         "role": "main dancer and sub rapper",
         "bioTopAfter": " of K/DA. Having won many awards as a choreographer, Kai'sa passion for dance never fails to bring K/DA into the spotlight. She is voiced by Jaira Burns and Wolftyla.",
-        "bioBottomBefore": "Embracing a cosmopolitan approach to life, Kai'sa spends her time traveling around the world to learn about dance. Her perserverance towards perfection and pristine detail makes her an",
+        "bioBottomBefore": "Embracing a cosmopolitan approach to life, Kai'sa spends her time traveling around the world to learn about dance. Her perseverance towards perfection and pristine detail makes her an",
         "strengths": "undeniable and captivating gem",
         "bioBottomAfter": " in K/DA.",
         "link": "https://www.leagueoflegends.com/en-us/champions/kai-sa/"

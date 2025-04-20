@@ -18,10 +18,10 @@ body, html {
     background-image: url('../assets/background/universe-zoomed-out.jpeg');
     background-size: cover;
     background-repeat: no-repeat;
-    width: 140%;
-    height: 140%;
+    width: 120%;
+    height: 100%;
     background-position: center;
-    overflow-x: scroll;
+    overflow: auto;
 }
 
 /* naviation links */
@@ -130,7 +130,7 @@ a {
 #kaisa {
     display: flex;
     margin-top: 100px;
-    margin-left: 300px;
+    margin-left: 800px;
 }
 
 h3 {
@@ -158,8 +158,8 @@ h3 {
 /* footer information */
 
 footer {
-    height: 160px;
-    margin-top: 150px;
+    height: 130px;
+    margin-top: 200px;
     margin-left: 20px;
     margin-right: 20px;
     justify-content: space-between;

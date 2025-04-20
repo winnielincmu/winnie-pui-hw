@@ -142,18 +142,18 @@ iframe {
     background-color:  rgba(33, 31, 44, .90);
     justify-content: center;
     align-items: center;
-    border-radius: 12px;
+    border-radius: 45px;
     padding: 20px;
     font-family: 'Anton';
-    color: #accff3;
+    color: #C9D2F5;
     flex-shrink: 0;
     column-gap: 5px;
-    border: solid #accff3 1px;
+    border: solid #C9D2F5 1px;
 }
 
 .more-button:hover {
     border-color: #211F2C;
-    background-color: #accff3;
+    background-color: #C9D2F5;
     color: #211F2C;
 }
 
