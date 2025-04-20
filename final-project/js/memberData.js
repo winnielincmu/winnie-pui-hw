@@ -2,9 +2,9 @@
 
 const members = {
     "Ahri": {
-        "profilePic": "ahri.png",
-        "emblemBlack": "ahri-emblem-black.png",
-        "emblemColored": "ahri-emblem.png",
+        "profilePic": "ahri.webp",
+        "emblemBlack": "ahri-emblem-black.webp",
+        "emblemColored": "ahri-emblem.webp",
         "title": "The Queen",
         "bioTopBefore": "Ahri is the ",
         "role": "leader and main vocalist",
@@ -16,9 +16,9 @@ const members = {
     },
 
     "Evelynn": {
-        "profilePic": "evelynn.png",
-        "emblemBlack": "evelynn-emblem-black.png",
-        "emblemColored": "evelynn-emblem.png",
+        "profilePic": "evelynn.webp",
+        "emblemBlack": "evelynn-emblem-black.webp",
+        "emblemColored": "evelynn-emblem.webp",
         "title": "The Diva",
         "bioTopBefore": "Evelynn is the ",
         "role": "lead vocalist",
@@ -30,9 +30,9 @@ const members = {
     },
 
     "Akali": {
-        "profilePic": "akali.png",
-        "emblemBlack": "akali-emblem-black.png",
-        "emblemColored": "akali-emblem.png",
+        "profilePic": "akali.webp",
+        "emblemBlack": "akali-emblem-black.webp",
+        "emblemColored": "akali-emblem.webp",
         "title": "The Rebel",
         "bioTopBefore": "Akali is the ",
         "role": "main rapper",
@@ -44,9 +44,9 @@ const members = {
     },
 
     "Kai'sa": {
-        "profilePic": "kaisa.png",
-        "emblemBlack": "kaisa-emblem-black.png",
-        "emblemColored": "kaisa-emblem.png",
+        "profilePic": "kaisa.webp",
+        "emblemBlack": "kaisa-emblem-black.webp",
+        "emblemColored": "kaisa-emblem.webp",
         "title": "The Dancer",
         "bioTopBefore": "Kai'sa is the ",
         "role": "main dancer and sub rapper",
