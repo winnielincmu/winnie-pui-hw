@@ -2,4 +2,4 @@
 
 At the intersection of gaming, music, and animation lies **K/DA**, a virtual girl group created by Riot Games to market the League of Legends World Championship. Using visual and sound stimulation, I designed and programmed an interactive website to showcase K/DA's discography and background.
 
-Enter the universe [here](https://winnielinworks.github.io/winnie-pui-hw/final-project/landing.html) or check out the website [demo]()! 🪐
+Enter the universe [here](https://winnielinworks.github.io/winnie-pui-hw/final-project/landing.html) or check out the website [demo](https://drive.google.com/file/d/10DfuXSDeWCig-iGoG7yTxeXnN-0MCUcf/view?usp=sharing)! 🪐
